@@ -1,0 +1,94 @@
+# generated: 2026-05-19
+# last_updated: 2026-05-19
+# project: GenePaw
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-05-19
+last_updated: 2026-05-21
+project: GenePaw
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  # ─── Epic 1: Foundation & Authentication ───
+  epic-1: done
+  1-1-backend-project-scaffold-and-docker-compose: done
+  1-2-database-schema-and-baseline-species-seed: done
+  1-3-jwt-authentication-and-rbac: done
+  1-4-react-router-v7-and-frontend-infrastructure: done
+  1-5-staff-login-flow: done
+  1-6-github-actions-ci-pipeline: done
+  epic-1-retrospective: optional
+
+  # ─── Epic 2: India-Market Frontend Polish ───
+  epic-2: done
+  2-1-customer-species-grid-filter-research-organisms: done
+  2-2-india-localization-footer-and-contact: done
+  2-3-india-address-forms-orderkit-and-speciessection: done
+  2-4-single-order-path-remove-duplicate-form-from-speciessection: done
+  2-5-home-hero-india-native-credibility-pass: done
+  epic-2-retrospective: optional
+
+  # ─── Epic 3: Kit Ordering & Tracking ───
+  epic-3: done
+  3-1-backend-order-creation-api: done
+  3-2-backend-consent-record-storage: done
+  3-3-frontend-inline-consent-step: done
+  3-4-frontend-4-step-ordering-wizard-api-wired: done
+  3-5-frontend-kit-tracking-status-page: done
+  epic-3-retrospective: optional
+
+  # ─── Epic 4: Lab Results Pipeline & Display ───
+  epic-4: in-progress
+  4-1-backend-lab-results-webhook: done
+  4-2-backend-results-retrieval-api: done
+  4-3-frontend-results-reveal-page: done
+  4-4-frontend-consumer-pdf-report-download: backlog
+  epic-4-retrospective: optional
+
+  # ─── Epic 5: Veterinarian Channel ───
+  epic-5: backlog
+  5-1-backend-vet-registration-api: backlog
+  5-2-frontend-vet-partner-landing-page: backlog
+  5-3-frontend-vet-report-showcase-page: backlog
+  5-4-frontend-clinical-pdf-generation: backlog
+  epic-5-retrospective: optional
+
+  # ─── Epic 6: Admin Portal ───
+  epic-6: backlog
+  6-1-frontend-admin-orders-dashboard: backlog
+  6-2-backend-and-frontend-order-status-management: backlog
+  6-3-frontend-species-catalog-management: backlog
+  epic-6-retrospective: optional
