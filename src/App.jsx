@@ -1,6 +1,12 @@
-import React, { Suspense } from "react";
-import { Routes, Route, Navigate } from "react-router";
+import React, { Suspense, useEffect } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router";
 import { COLORS } from "./shared.jsx";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
 
 const CustomerPortal = React.lazy(() => import("./CustomerPortal.jsx"));
 const OrderFlow = React.lazy(() => import("./OrderFlow.jsx"));
@@ -82,6 +88,7 @@ export default function App() {
   return (
     <ErrorBoundary>
       <Suspense fallback={<Loading />}>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<CustomerPortal />} />
           <Route path="/track" element={<CustomerPortal />} />
