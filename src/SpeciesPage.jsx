@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router";
-import { ArrowLeft, Dna, Activity, Globe2 } from "lucide-react";
-import { COLORS, Navbar, Footer, Badge } from "./shared.jsx";
+import { ArrowLeft, Dna, Globe2, ChevronDown } from "lucide-react";
+import { COLORS, Navbar, Footer } from "./shared.jsx";
 import { useApp } from "./AppContext.jsx";
 import { SPECIES_DATA } from "./CustomerPortal.jsx";
 
@@ -14,6 +15,11 @@ export default function SpeciesPage() {
   const { speciesName } = useParams();
   const navigate = useNavigate();
   const { user, logout, categories } = useApp();
+  const [expandedCats, setExpandedCats] = useState([]);
+
+  const toggleCat = (id) => setExpandedCats((prev) =>
+    prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
+  );
 
   const decoded = decodeURIComponent(speciesName);
 
@@ -82,46 +88,56 @@ export default function SpeciesPage() {
         {results.length === 0 ? (
           <div className="text-center py-20 text-gray-400 text-sm">No markers found for this species.</div>
         ) : (
-          <div className="space-y-6">
-            {grouped.map(({ cat, markers }) => (
-              <div key={cat.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                {/* Category header */}
-                <div className="flex items-center gap-3 px-6 py-4" style={{ backgroundColor: `${cat.color}12` }}>
-                  <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
-                  <h2 className="font-bold text-gray-900 flex-1">{cat.name}</h2>
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full text-white" style={{ backgroundColor: cat.color }}>
-                    {markers.length} marker{markers.length !== 1 ? "s" : ""}
-                  </span>
-                </div>
+          <div className="space-y-3">
+            {grouped.map(({ cat, markers }) => {
+              const isOpen = expandedCats.includes(cat.id);
+              return (
+                <div key={cat.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                  {/* Category header — clickable to toggle */}
+                  <button
+                    onClick={() => toggleCat(cat.id)}
+                    className="w-full flex items-center gap-3 px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors text-left"
+                    style={{ backgroundColor: `${cat.color}12` }}
+                  >
+                    <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: cat.color }} />
+                    <h2 className="font-bold text-gray-900 flex-1">{cat.name}</h2>
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full text-white" style={{ backgroundColor: cat.color }}>
+                      {markers.length} marker{markers.length !== 1 ? "s" : ""}
+                    </span>
+                    <ChevronDown size={16} className={`text-gray-400 transition-transform shrink-0 ${isOpen ? "rotate-180" : ""}`} />
+                  </button>
 
-                {/* Marker rows */}
-                <div className="divide-y divide-gray-50">
-                  {markers.map(({ marker, idx }) => {
-                    const rs = RISK_STYLE[marker.risk] ?? RISK_STYLE.Low;
-                    return (
-                      <button
-                        key={idx}
-                        onClick={() => navigate(`/markers/${cat.id}/${idx}`)}
-                        className="w-full text-left px-6 py-4 hover:bg-gray-50 transition-colors group"
-                      >
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-2 flex-wrap mb-1">
-                              <span className="font-semibold text-gray-900 group-hover:text-green-700 transition-colors">{marker.name}</span>
-                              <span className="text-xs font-mono text-gray-400">{marker.gene}</span>
+                  {/* Marker rows — only when expanded */}
+                  {isOpen && (
+                    <div className="divide-y divide-gray-50">
+                      {markers.map(({ marker, idx }) => {
+                        const rs = RISK_STYLE[marker.risk] ?? RISK_STYLE.Low;
+                        return (
+                          <button
+                            key={idx}
+                            onClick={() => navigate(`/markers/${cat.id}/${idx}`)}
+                            className="w-full text-left px-6 py-4 hover:bg-gray-50 transition-colors group"
+                          >
+                            <div className="flex items-start justify-between gap-4">
+                              <div className="flex-1 min-w-0">
+                                <div className="flex items-center gap-2 flex-wrap mb-1">
+                                  <span className="font-semibold text-gray-900 group-hover:text-green-700 transition-colors">{marker.name}</span>
+                                  <span className="text-xs font-mono text-gray-400">{marker.gene}</span>
+                                </div>
+                                {marker.description && (
+                                  <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed">{marker.description}</p>
+                                )}
+                              </div>
+                              <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full shrink-0 ${rs.pill}`}>{marker.risk}</span>
                             </div>
-                            {marker.description && (
-                              <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed">{marker.description}</p>
-                            )}
-                          </div>
-                          <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full shrink-0 ${rs.pill}`}>{marker.risk}</span>
-                        </div>
-                      </button>
-                    );
-                  })}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>
