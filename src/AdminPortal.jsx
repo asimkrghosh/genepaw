@@ -887,15 +887,7 @@ function MarkersAdmin() {
                           </div>
                           {/* Published Article inline */}
                           <div className="mt-3 pt-3 border-t border-blue-100">
-                            <div className="flex items-center justify-between mb-2">
-                              <div className="text-[10px] uppercase font-semibold text-gray-400">Published Article</div>
-                              <button
-                                onClick={() => navigate(`/markers/${cat.id}/${idx}`)}
-                                className="flex items-center gap-1 px-2 py-0.5 rounded-lg text-[10px] font-semibold text-purple-600 hover:bg-purple-50 cursor-pointer transition-colors"
-                              >
-                                <BookOpen size={10} /> View
-                              </button>
-                            </div>
+                            <div className="text-[10px] uppercase font-semibold text-gray-400 mb-2">Published Article</div>
                             {articles[marker.gene]?.article ? (
                               <div>
                                 <p className="text-xs text-gray-600 leading-relaxed mb-1">{articles[marker.gene].article}</p>
