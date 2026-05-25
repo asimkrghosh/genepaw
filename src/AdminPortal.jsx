@@ -867,7 +867,14 @@ function MarkersAdmin() {
                             </div>
                             <div>
                               <div className="text-[10px] uppercase font-semibold text-gray-400 mb-0.5">Affected Species</div>
-                              <div className="text-sm text-gray-700">{marker.species}</div>
+                              <div className="flex flex-wrap gap-1 mt-0.5">
+                                {marker.species.split(",").map((s) => s.trim()).filter(Boolean).map((s, i) => (
+                                  <button key={i} onClick={() => navigate(`/species/${encodeURIComponent(s)}`)}
+                                    className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 font-medium italic hover:bg-green-100 hover:text-green-700 cursor-pointer transition-colors">
+                                    {s}
+                                  </button>
+                                ))}
+                              </div>
                             </div>
                             <div>
                               <div className="text-[10px] uppercase font-semibold text-gray-400 mb-0.5">Risk Level</div>
