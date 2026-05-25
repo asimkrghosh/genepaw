@@ -85,8 +85,26 @@ export function AppProvider({ children }) {
   const [user, setUser] = useState(null);
   const [pricing, setPricing] = useState(DEFAULT_PRICING);
   const [kits, setKits] = useState(INITIAL_KITS);
-  const [articles, setArticles] = useState(MARKER_ARTICLES);
-  const [categories, setCategories] = useState(() => MARKER_CATEGORIES.map(c => ({ ...c, markers: [...c.markers] })));
+  const [articles, setArticles] = useState(() => {
+    try {
+      const stored = localStorage.getItem("genepaw_articles");
+      return stored ? JSON.parse(stored) : MARKER_ARTICLES;
+    } catch { return MARKER_ARTICLES; }
+  });
+  const [categories, setCategories] = useState(() => {
+    try {
+      const stored = localStorage.getItem("genepaw_categories");
+      return stored ? JSON.parse(stored) : MARKER_CATEGORIES.map(c => ({ ...c, markers: [...c.markers] }));
+    } catch { return MARKER_CATEGORIES.map(c => ({ ...c, markers: [...c.markers] })); }
+  });
+
+  useEffect(() => {
+    try { localStorage.setItem("genepaw_articles", JSON.stringify(articles)); } catch {}
+  }, [articles]);
+
+  useEffect(() => {
+    try { localStorage.setItem("genepaw_categories", JSON.stringify(categories)); } catch {}
+  }, [categories]);
 
   useEffect(() => {
     const token = localStorage.getItem("genepaw_token");
