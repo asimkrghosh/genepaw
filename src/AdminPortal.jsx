@@ -721,7 +721,7 @@ function MarkersAdmin() {
   const [saved, setSaved] = useState(false);
   const [loading, setLoading] = useState(true);
   const [editingMarker, setEditingMarker] = useState(null);
-  const [editMarkerValue, setEditMarkerValue] = useState({ name: "", gene: "", risk: "Low", species: "", significance: SIGNIFICANCE_OPTIONS[0], description: "" });
+  const [editMarkerValue, setEditMarkerValue] = useState({ name: "", gene: "", risk: "Low", species: "", significance: SIGNIFICANCE_OPTIONS[0], description: "", article: "", doi: "" });
   const [newMarker, setNewMarker] = useState({ catId: null, name: "", gene: "", risk: "", species: "", significance: "", description: "", article: "", doi: "" });
   const [viewingMarker, setViewingMarker] = useState(null);
   const [expandedCats, setExpandedCats] = useState([]);
@@ -741,12 +741,15 @@ function MarkersAdmin() {
   const startMarkerEdit = (catId, idx) => {
     const marker = categories.find((c) => c.id === catId).markers[idx];
     setEditingMarker(`${catId}-${idx}`);
-    setEditMarkerValue({ ...marker });
+    setEditMarkerValue({ ...marker, article: articles[marker.gene]?.article ?? "", doi: articles[marker.gene]?.doi ?? "" });
   };
   const saveMarkerEdit = (catId, idx) => {
     updateMarker(catId, idx, editMarkerValue);
+    if (editMarkerValue.gene.trim() && (editMarkerValue.article.trim() || editMarkerValue.doi.trim())) {
+      updateArticle(editMarkerValue.gene.trim(), { article: editMarkerValue.article.trim(), doi: editMarkerValue.doi.trim() });
+    }
     setEditingMarker(null);
-    setEditMarkerValue({ name: "", gene: "", risk: "Low", species: "", significance: SIGNIFICANCE_OPTIONS[0], description: "" });
+    setEditMarkerValue({ name: "", gene: "", risk: "Low", species: "", significance: SIGNIFICANCE_OPTIONS[0], description: "", article: "", doi: "" });
     flash();
   };
   const deleteMarker = (catId, idx) => { ctxDeleteMarker(catId, idx); flash(); };
@@ -820,6 +823,11 @@ function MarkersAdmin() {
                               {SIGNIFICANCE_OPTIONS.map((sig) => <option key={sig} value={sig}>{sig}</option>)}
                             </select>
                             <textarea value={editMarkerValue.description} onChange={(e) => setEditMarkerValue({ ...editMarkerValue, description: e.target.value })} placeholder="Description" rows={2} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none resize-none focus:ring-2 focus:ring-green-100" />
+                            <div className="pt-2 border-t border-gray-100 space-y-2">
+                              <p className="text-[10px] uppercase font-semibold text-gray-400 flex items-center gap-1"><BookOpen size={10} /> Published Article <span className="font-normal normal-case text-gray-300">(optional)</span></p>
+                              <textarea value={editMarkerValue.article} onChange={(e) => setEditMarkerValue({ ...editMarkerValue, article: e.target.value })} placeholder="Author(s) (Year) Title. Journal Volume:Pages" rows={2} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none resize-none focus:ring-2 focus:ring-green-100" />
+                              <input value={editMarkerValue.doi} onChange={(e) => setEditMarkerValue({ ...editMarkerValue, doi: e.target.value })} placeholder="DOI e.g. 10.1038/23475" className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-green-100" />
+                            </div>
                             <div className="flex items-center gap-2">
                               <button onClick={() => saveMarkerEdit(cat.id, idx)} className="px-3 py-1 rounded-lg bg-green-100 text-green-700 hover:bg-green-200 cursor-pointer text-xs font-medium flex items-center gap-1"><Check size={14} /> Save</button>
                               <button onClick={() => setEditingMarker(null)} className="px-3 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-gray-200 cursor-pointer text-xs font-medium flex items-center gap-1"><X size={14} /> Cancel</button>

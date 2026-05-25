@@ -217,37 +217,10 @@ export default function MarkerArticle() {
 
         {/* Published Article */}
         <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-5">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="flex items-center gap-2 text-base font-bold text-gray-900">
-              <ExternalLink size={18} style={{ color: COLORS.primary }} /> Published Article
-            </h2>
-            {isStaff && !editingArticle && (
-              <button onClick={startEditArticle} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-gray-500 hover:text-green-700 hover:bg-green-50 cursor-pointer transition-colors">
-                <Pencil size={13} /> {ref?.article ? "Edit" : "Add"}
-              </button>
-            )}
-          </div>
-
-          {editingArticle ? (
-            <div className="space-y-3">
-              <div>
-                <label className={labelClass}>Citation</label>
-                <textarea value={articleDraft.article} onChange={(e) => setArticleDraft({ ...articleDraft, article: e.target.value })} rows={3} placeholder="Author(s) (Year) Title. Journal Volume:Pages" className={inputClass + " resize-none"} autoFocus />
-              </div>
-              <div>
-                <label className={labelClass}>DOI</label>
-                <input value={articleDraft.doi} onChange={(e) => setArticleDraft({ ...articleDraft, doi: e.target.value })} placeholder="e.g. 10.1038/23475" className={inputClass} />
-              </div>
-              <div className="flex items-center gap-2 pt-1">
-                <button onClick={saveArticle} className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-green-600 text-white text-xs font-semibold hover:bg-green-700 cursor-pointer transition-colors">
-                  <Check size={13} /> Save
-                </button>
-                <button onClick={() => setEditingArticle(false)} className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-xs font-semibold hover:bg-gray-200 cursor-pointer transition-colors">
-                  <X size={13} /> Cancel
-                </button>
-              </div>
-            </div>
-          ) : ref?.article ? (
+          <h2 className="flex items-center gap-2 text-base font-bold text-gray-900 mb-3">
+            <ExternalLink size={18} style={{ color: COLORS.primary }} /> Published Article
+          </h2>
+          {ref?.article ? (
             <div>
               <p className="text-gray-700 leading-relaxed text-sm mb-3">{ref.article}</p>
               {ref.doi && (
@@ -259,9 +232,7 @@ export default function MarkerArticle() {
               )}
             </div>
           ) : (
-            <p className="text-gray-400 text-sm italic">
-              No published article on record.{isStaff && <span className="text-green-600 not-italic"> Use the Add button above to add one.</span>}
-            </p>
+            <p className="text-gray-400 text-sm italic">No published article on record.</p>
           )}
         </section>
 
