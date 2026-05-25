@@ -965,6 +965,7 @@ function LiveTracking() {
 // ─── Page ───
 export default function CustomerPortalPage() {
   const location = useLocation();
+  const { orderId } = useParams();
   const { user, logout } = useApp();
   const isTrackPage = location.pathname.startsWith("/track");
 
@@ -973,7 +974,7 @@ export default function CustomerPortalPage() {
       <Navbar currentPage={isTrackPage ? "track" : "home"} user={user} onLogout={logout} />
       {isTrackPage ? (
         <div className="pt-20">
-          <LiveTracking />
+          <KitTracking prefilledId={orderId || ""} />
         </div>
       ) : (
         <>
