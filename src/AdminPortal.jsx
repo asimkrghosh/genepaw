@@ -840,7 +840,7 @@ function MarkersAdmin() {
                         )}
                         {editingMarker !== `${cat.id}-${idx}` && (
                           <div className="flex items-center gap-1">
-                            <button onClick={() => setViewingMarker(viewingMarker === `${cat.id}-${idx}` ? null : `${cat.id}-${idx}`)} className={`p-1 rounded-lg cursor-pointer ${viewingMarker === `${cat.id}-${idx}` ? "bg-blue-100 text-blue-600" : "text-gray-400 hover:bg-blue-50 hover:text-blue-500"}`} title="Quick view"><Eye size={14} /></button>
+                            <button onClick={() => setViewingMarker(viewingMarker === `${cat.id}-${idx}` ? null : `${cat.id}-${idx}`)} className={`p-1 rounded-lg cursor-pointer ${viewingMarker === `${cat.id}-${idx}` ? "bg-blue-100 text-blue-600" : "text-gray-400 hover:bg-blue-50 hover:text-blue-500"}`} title="View"><Eye size={14} /></button>
                             <button onClick={() => navigate(`/markers/${cat.id}/${idx}`)} className="p-1 rounded-lg text-gray-400 hover:bg-purple-50 hover:text-purple-500 cursor-pointer" title="View published article"><BookOpen size={14} /></button>
                             <button onClick={() => startMarkerEdit(cat.id, idx)} className="p-1 rounded-lg text-gray-400 hover:bg-green-50 hover:text-green-600 cursor-pointer"><Pencil size={14} /></button>
                             <button onClick={() => setConfirmDelete({ catId: cat.id, idx, name: marker.name })} className="p-1 rounded-lg text-gray-400 hover:bg-red-50 hover:text-red-500 cursor-pointer"><Trash2 size={14} /></button>
