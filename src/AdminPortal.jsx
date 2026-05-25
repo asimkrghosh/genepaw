@@ -726,8 +726,6 @@ function MarkersAdmin() {
   const [viewingMarker, setViewingMarker] = useState(null);
   const [expandedCats, setExpandedCats] = useState([]);
   const [confirmDelete, setConfirmDelete] = useState(null);
-  const [editingArticle, setEditingArticle] = useState(null);
-  const [articleDraft, setArticleDraft] = useState({ article: "", doi: "" });
 
   useEffect(() => {
     fetch("/api/v1/markers/categories")
@@ -891,55 +889,14 @@ function MarkersAdmin() {
                           <div className="mt-3 pt-3 border-t border-blue-100">
                             <div className="flex items-center justify-between mb-2">
                               <div className="text-[10px] uppercase font-semibold text-gray-400">Published Article</div>
-                              <div className="flex items-center gap-1">
-                                {editingArticle !== marker.gene ? (
-                                  <button
-                                    onClick={() => { setEditingArticle(marker.gene); setArticleDraft({ article: articles[marker.gene]?.article ?? "", doi: articles[marker.gene]?.doi ?? "" }); }}
-                                    className="flex items-center gap-1 px-2 py-0.5 rounded-lg text-[10px] font-semibold text-gray-400 hover:text-green-700 hover:bg-green-50 cursor-pointer transition-colors"
-                                  >
-                                    <Pencil size={10} /> {articles[marker.gene]?.article ? "Edit" : "Add"}
-                                  </button>
-                                ) : null}
-                                <button
-                                  onClick={() => navigate(`/markers/${cat.id}/${idx}`)}
-                                  className="flex items-center gap-1 px-2 py-0.5 rounded-lg text-[10px] font-semibold text-purple-600 hover:bg-purple-50 cursor-pointer transition-colors"
-                                >
-                                  <BookOpen size={10} /> View
-                                </button>
-                              </div>
+                              <button
+                                onClick={() => navigate(`/markers/${cat.id}/${idx}`)}
+                                className="flex items-center gap-1 px-2 py-0.5 rounded-lg text-[10px] font-semibold text-purple-600 hover:bg-purple-50 cursor-pointer transition-colors"
+                              >
+                                <BookOpen size={10} /> View
+                              </button>
                             </div>
-                            {editingArticle === marker.gene ? (
-                              <div className="space-y-2">
-                                <textarea
-                                  value={articleDraft.article}
-                                  onChange={(e) => setArticleDraft({ ...articleDraft, article: e.target.value })}
-                                  rows={2}
-                                  placeholder="Author(s) (Year) Title. Journal Volume:Pages"
-                                  className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-xs focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100 resize-none"
-                                  autoFocus
-                                />
-                                <input
-                                  value={articleDraft.doi}
-                                  onChange={(e) => setArticleDraft({ ...articleDraft, doi: e.target.value })}
-                                  placeholder="DOI e.g. 10.1038/23475"
-                                  className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-xs focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100"
-                                />
-                                <div className="flex items-center gap-1.5">
-                                  <button
-                                    onClick={() => { updateArticle(marker.gene, { article: articleDraft.article.trim(), doi: articleDraft.doi.trim() }); setEditingArticle(null); setSaved(true); setTimeout(() => setSaved(false), 2000); }}
-                                    className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-green-100 text-green-700 hover:bg-green-200 cursor-pointer text-xs font-medium"
-                                  >
-                                    <Check size={12} /> Save
-                                  </button>
-                                  <button
-                                    onClick={() => setEditingArticle(null)}
-                                    className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-gray-200 cursor-pointer text-xs font-medium"
-                                  >
-                                    <X size={12} /> Cancel
-                                  </button>
-                                </div>
-                              </div>
-                            ) : articles[marker.gene]?.article ? (
+                            {articles[marker.gene]?.article ? (
                               <div>
                                 <p className="text-xs text-gray-600 leading-relaxed mb-1">{articles[marker.gene].article}</p>
                                 {articles[marker.gene].doi && (
@@ -949,7 +906,7 @@ function MarkersAdmin() {
                                 )}
                               </div>
                             ) : (
-                              <p className="text-xs text-gray-400 italic">No article on record. Use Add to set one.</p>
+                              <p className="text-xs text-gray-400 italic">No article on record.</p>
                             )}
                           </div>
                         </div>
