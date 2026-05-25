@@ -116,17 +116,37 @@ export function Navbar({ currentPage, user, onLogout }) {
 
   const isAdmin = user?.role === "staff";
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const navTo = (id) => {
-    if (id === "home" || id === "species" || id === "how" || id === "pricing" || id === "faq") {
+    const sectionIds = ["species", "how", "pricing", "faq"];
+    if (id === "home") {
       navigate("/");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (sectionIds.includes(id)) {
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => scrollToSection(id), 150);
+      } else {
+        scrollToSection(id);
+      }
     } else if (id === "results") {
       navigate("/results");
     } else if (id === "tracking") {
       navigate("/track");
     } else if (id === "order") {
       navigate("/order-kit");
-    } else if (["upload-report", "update-tracker", "markers"].includes(id)) {
-      navigate("/admin");
+    } else if (id === "upload-report") {
+      navigate("/admin", { state: { tab: "upload" } });
+    } else if (id === "update-tracker") {
+      navigate("/admin", { state: { tab: "tracker" } });
+    } else if (id === "markers") {
+      navigate("/admin", { state: { tab: "markers" } });
     }
     setOpen(false);
   };
@@ -137,12 +157,18 @@ export function Navbar({ currentPage, user, onLogout }) {
     { id: "home", label: "Home", path: "/" },
     { id: "results", label: "Sample Results", path: "/results" },
     { id: "tracking", label: "Track Kit", path: "/track" },
-    { id: "upload-report", label: "Upload Report", adminOnly: true, path: "/admin" },
-    { id: "update-tracker", label: "Update Tracker", adminOnly: true, path: "/admin" },
-    { id: "markers", label: "Markers", adminOnly: true, path: "/admin" },
-    { id: "pricing", label: "Pricing", path: "/" },
-    { id: "faq", label: "FAQ", hideForAdmin: true, path: "/" },
+    { id: "upload-report", label: "Upload Report", adminOnly: true, path: "/admin", tab: "upload" },
+    { id: "update-tracker", label: "Update Tracker", adminOnly: true, path: "/admin", tab: "tracker" },
+    { id: "markers", label: "Markers", adminOnly: true, path: "/admin", tab: "markers" },
+    { id: "pricing", label: "Pricing", path: "/", scrollOnly: true },
+    { id: "faq", label: "FAQ", hideForAdmin: true, path: "/", scrollOnly: true },
   ];
+
+  const isActive = (l) => {
+    if (l.scrollOnly) return false;
+    if (l.tab) return activePath === l.path && location.state?.tab === l.tab;
+    return activePath === l.path && !l.adminOnly;
+  };
 
   const links = isAdmin ? allLinks.filter((l) => !l.hideForAdmin) : allLinks.filter((l) => !l.adminOnly);
 
@@ -161,7 +187,7 @@ export function Navbar({ currentPage, user, onLogout }) {
 
         <div className="hidden lg:flex items-center gap-1">
           {links.map((l) => (
-            <button key={l.id} onClick={() => navTo(l.id)} className={`px-4 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${activePath === l.path ? "bg-green-100 text-green-800" : useLight ? "text-white/80 hover:text-white hover:bg-white/10" : "text-gray-600 hover:text-green-700 hover:bg-green-50"}`}>
+            <button key={l.id} onClick={() => navTo(l.id)} className={`px-4 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${isActive(l) ? "bg-green-100 text-green-800" : useLight ? "text-white/80 hover:text-white hover:bg-white/10" : "text-gray-600 hover:text-green-700 hover:bg-green-50"}`}>
               {l.label}
             </button>
           ))}
