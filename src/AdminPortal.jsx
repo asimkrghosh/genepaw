@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
-import { Search, ChevronDown, Plus, Check, ArrowRight, ArrowLeft, Clock, Truck, FlaskConical, BarChart3, Heart, Dna, Brain, Apple, Users, Microscope, Activity, AlertTriangle, Dog, GitBranch, Eye, Pencil, Upload, Trash2, ClipboardList, FileUp, Save, ToggleLeft, ToggleRight, X, PackageCheck, RefreshCw, BookOpen } from "lucide-react";
+import { Search, ChevronDown, Plus, Check, ArrowRight, ArrowLeft, Clock, Truck, FlaskConical, BarChart3, Heart, Dna, Brain, Apple, Users, Microscope, Activity, AlertTriangle, Dog, GitBranch, Eye, Pencil, Upload, Trash2, ClipboardList, FileUp, Save, ToggleLeft, ToggleRight, X, PackageCheck, RefreshCw, BookOpen, ExternalLink } from "lucide-react";
 import { COLORS, SectionTitle, Badge, Navbar, Footer, DEFAULT_PRICING } from "./shared.jsx";
 import { SPECIES_DATA, STEP_TEMPLATES } from "./CustomerPortal.jsx";
 import { useApp } from "./AppContext.jsx";
@@ -934,7 +934,9 @@ function MarkersAdmin() {
                               <div>
                                 <p className="text-xs text-gray-600 leading-relaxed mb-1">{articles[marker.gene].article}</p>
                                 {articles[marker.gene].doi && (
-                                  <span className="text-[10px] font-mono text-gray-400">DOI: {articles[marker.gene].doi}</span>
+                                  <a href={`https://doi.org/${articles[marker.gene].doi}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-[10px] font-mono text-blue-500 hover:text-blue-700 hover:underline">
+                                    <ExternalLink size={9} /> DOI: {articles[marker.gene].doi}
+                                  </a>
                                 )}
                               </div>
                             ) : (
