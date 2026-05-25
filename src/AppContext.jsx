@@ -1,5 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { DEFAULT_PRICING } from "./shared.jsx";
+import { MARKER_ARTICLES } from "./markerArticles.js";
+import { MARKER_CATEGORIES } from "./markerData.js";
 
 const SAMPLE_RESULTS = {
   breedComposition: [
@@ -83,6 +85,8 @@ export function AppProvider({ children }) {
   const [user, setUser] = useState(null);
   const [pricing, setPricing] = useState(DEFAULT_PRICING);
   const [kits, setKits] = useState(INITIAL_KITS);
+  const [articles, setArticles] = useState(MARKER_ARTICLES);
+  const [categories, setCategories] = useState(() => MARKER_CATEGORIES.map(c => ({ ...c, markers: [...c.markers] })));
 
   useEffect(() => {
     const token = localStorage.getItem("genepaw_token");
@@ -118,8 +122,30 @@ export function AppProvider({ children }) {
     setKits(prev => ({ ...prev, [kitId]: { id: kitId, ...prev[kitId], ...data } }));
   };
 
+  const updateArticle = (gene, data) => {
+    setArticles(prev => ({ ...prev, [gene]: { ...(prev[gene] ?? {}), ...data } }));
+  };
+
+  const updateMarker = (catId, idx, data) => {
+    setCategories(prev => prev.map(c => c.id === catId
+      ? { ...c, markers: c.markers.map((m, i) => i === idx ? { ...m, ...data } : m) }
+      : c));
+  };
+
+  const addMarker = (catId, markerData) => {
+    setCategories(prev => prev.map(c => c.id === catId
+      ? { ...c, markers: [...c.markers, markerData] }
+      : c));
+  };
+
+  const deleteMarker = (catId, idx) => {
+    setCategories(prev => prev.map(c => c.id === catId
+      ? { ...c, markers: c.markers.filter((_, i) => i !== idx) }
+      : c));
+  };
+
   return (
-    <AppContext.Provider value={{ user, pricing, kits, login, logout, updatePrice, uploadReport, updateKit }}>
+    <AppContext.Provider value={{ user, pricing, kits, articles, categories, setCategories, login, logout, updatePrice, uploadReport, updateKit, updateArticle, updateMarker, addMarker, deleteMarker }}>
       {children}
     </AppContext.Provider>
   );

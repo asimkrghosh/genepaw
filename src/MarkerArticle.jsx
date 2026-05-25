@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router";
-import { ArrowLeft, ArrowRight, Dna, AlertTriangle, BookOpen, Globe2, Activity, Tag } from "lucide-react";
+import { ArrowLeft, ArrowRight, Dna, AlertTriangle, BookOpen, Globe2, Activity, Tag, ExternalLink, Pencil, Check, X } from "lucide-react";
 import { COLORS, Navbar, Footer } from "./shared.jsx";
-import { MARKER_CATEGORIES } from "./AdminPortal.jsx";
+import { RISK_LEVELS, SIGNIFICANCE_OPTIONS } from "./markerData.js";
 import { useApp } from "./AppContext.jsx";
 
 const RISK_STYLE = {
@@ -10,12 +11,20 @@ const RISK_STYLE = {
   High:   { pill: "bg-red-100 text-red-700",      dot: "#ef4444", label: "High Risk" },
 };
 
+const BLANK_MARKER = { name: "", gene: "", risk: "Low", species: "", significance: "", description: "" };
+
 export default function MarkerArticle() {
   const { categoryId, markerIdx } = useParams();
   const navigate = useNavigate();
-  const { user, logout } = useApp();
+  const { user, logout, articles, updateArticle, categories, updateMarker } = useApp();
 
-  const category = MARKER_CATEGORIES.find((c) => c.id === categoryId);
+  const [editingArticle, setEditingArticle] = useState(false);
+  const [articleDraft, setArticleDraft] = useState({ article: "", doi: "" });
+  const [editingMarker, setEditingMarker] = useState(false);
+  const [markerDraft, setMarkerDraft] = useState(BLANK_MARKER);
+  const [saved, setSaved] = useState("");
+
+  const category = categories.find((c) => c.id === categoryId);
   const idx = parseInt(markerIdx, 10);
   const marker = category?.markers[idx];
 
@@ -35,6 +44,33 @@ export default function MarkerArticle() {
   const species = marker.species.split(",").map((s) => s.trim()).filter(Boolean);
   const prev = idx > 0 ? { marker: category.markers[idx - 1], idx: idx - 1 } : null;
   const next = idx < category.markers.length - 1 ? { marker: category.markers[idx + 1], idx: idx + 1 } : null;
+  const ref = articles[marker.gene] ?? null;
+  const isStaff = user?.role === "staff";
+
+  const flash = (msg) => { setSaved(msg); setTimeout(() => setSaved(""), 2000); };
+
+  const startEditArticle = () => {
+    setArticleDraft({ article: ref?.article ?? "", doi: ref?.doi ?? "" });
+    setEditingArticle(true);
+  };
+  const saveArticle = () => {
+    updateArticle(marker.gene, { article: articleDraft.article.trim(), doi: articleDraft.doi.trim() });
+    setEditingArticle(false);
+    flash("Article saved.");
+  };
+
+  const startEditMarker = () => {
+    setMarkerDraft({ name: marker.name, gene: marker.gene, risk: marker.risk, species: marker.species, significance: marker.significance, description: marker.description });
+    setEditingMarker(true);
+  };
+  const saveMarker = () => {
+    updateMarker(categoryId, idx, markerDraft);
+    setEditingMarker(false);
+    flash("Marker details saved.");
+  };
+
+  const inputClass = "w-full px-3 py-2 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100";
+  const labelClass = "text-xs font-semibold text-gray-500 block mb-1";
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: COLORS.bg, color: COLORS.text }}>
@@ -52,6 +88,13 @@ export default function MarkerArticle() {
           <span>/</span>
           <span className="text-gray-600 font-medium">{marker.name}</span>
         </nav>
+
+        {/* Saved flash */}
+        {saved && (
+          <div className="mb-6 flex items-center gap-2 text-sm text-green-700 bg-green-50 border border-green-200 rounded-xl px-4 py-3">
+            <Check size={16} /> {saved}
+          </div>
+        )}
 
         {/* Header */}
         <header className="mb-10">
@@ -92,20 +135,133 @@ export default function MarkerArticle() {
           </div>
         </div>
 
-        {/* About this gene */}
+        {/* Marker Details */}
         <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-5">
-          <h2 className="flex items-center gap-2 text-base font-bold text-gray-900 mb-3">
-            <BookOpen size={18} style={{ color: COLORS.primary }} /> About this Gene
-          </h2>
-          <p className="text-gray-600 leading-relaxed text-sm">{marker.description}</p>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="flex items-center gap-2 text-base font-bold text-gray-900">
+              <BookOpen size={18} style={{ color: COLORS.primary }} /> Marker Details
+            </h2>
+            {isStaff && !editingMarker && (
+              <button onClick={startEditMarker} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-gray-500 hover:text-green-700 hover:bg-green-50 cursor-pointer transition-colors">
+                <Pencil size={13} /> Edit
+              </button>
+            )}
+          </div>
+
+          {editingMarker ? (
+            <div className="space-y-3">
+              <div className="grid sm:grid-cols-2 gap-3">
+                <div>
+                  <label className={labelClass}>Marker Name</label>
+                  <input value={markerDraft.name} onChange={(e) => setMarkerDraft({ ...markerDraft, name: e.target.value })} className={inputClass} placeholder="Full marker name" autoFocus />
+                </div>
+                <div>
+                  <label className={labelClass}>Gene Symbol</label>
+                  <input value={markerDraft.gene} onChange={(e) => setMarkerDraft({ ...markerDraft, gene: e.target.value })} className={inputClass} placeholder="e.g. AVPR1A" />
+                </div>
+                <div>
+                  <label className={labelClass}>Risk Level</label>
+                  <select value={markerDraft.risk} onChange={(e) => setMarkerDraft({ ...markerDraft, risk: e.target.value })} className={inputClass}>
+                    {RISK_LEVELS.map((r) => <option key={r} value={r}>{r}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label className={labelClass}>Affected Species</label>
+                  <input value={markerDraft.species} onChange={(e) => setMarkerDraft({ ...markerDraft, species: e.target.value })} className={inputClass} placeholder="Comma-separated species" />
+                </div>
+              </div>
+              <div>
+                <label className={labelClass}>Clinical Significance</label>
+                <select value={markerDraft.significance} onChange={(e) => setMarkerDraft({ ...markerDraft, significance: e.target.value })} className={inputClass}>
+                  <option value="">— Select —</option>
+                  {SIGNIFICANCE_OPTIONS.map((s) => <option key={s} value={s}>{s}</option>)}
+                </select>
+              </div>
+              <div>
+                <label className={labelClass}>Description</label>
+                <textarea value={markerDraft.description} onChange={(e) => setMarkerDraft({ ...markerDraft, description: e.target.value })} rows={3} className={inputClass + " resize-none"} placeholder="Gene description" />
+              </div>
+              <div className="flex items-center gap-2 pt-1">
+                <button onClick={saveMarker} className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-green-600 text-white text-xs font-semibold hover:bg-green-700 cursor-pointer transition-colors">
+                  <Check size={13} /> Save
+                </button>
+                <button onClick={() => setEditingMarker(false)} className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-xs font-semibold hover:bg-gray-200 cursor-pointer transition-colors">
+                  <X size={13} /> Cancel
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              <div className="grid sm:grid-cols-2 gap-3 text-sm">
+                <div>
+                  <div className="text-[10px] uppercase font-semibold text-gray-400 mb-0.5">Gene Symbol</div>
+                  <div className="font-mono text-gray-800">{marker.gene}</div>
+                </div>
+                <div>
+                  <div className="text-[10px] uppercase font-semibold text-gray-400 mb-0.5">Risk Level</div>
+                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${rs.pill}`}>{marker.risk}</span>
+                </div>
+              </div>
+              <div>
+                <div className="text-[10px] uppercase font-semibold text-gray-400 mb-0.5">Clinical Significance</div>
+                <p className="text-gray-600 text-sm leading-relaxed">{marker.significance}</p>
+              </div>
+              <div>
+                <div className="text-[10px] uppercase font-semibold text-gray-400 mb-0.5">Description</div>
+                <p className="text-gray-600 text-sm leading-relaxed">{marker.description}</p>
+              </div>
+            </div>
+          )}
         </section>
 
-        {/* Clinical significance */}
+        {/* Published Article */}
         <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-5">
-          <h2 className="flex items-center gap-2 text-base font-bold text-gray-900 mb-3">
-            <AlertTriangle size={18} style={{ color: rs.dot }} /> Clinical Significance
-          </h2>
-          <p className="text-gray-600 leading-relaxed text-sm">{marker.significance}</p>
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="flex items-center gap-2 text-base font-bold text-gray-900">
+              <ExternalLink size={18} style={{ color: COLORS.primary }} /> Published Article
+            </h2>
+            {isStaff && !editingArticle && (
+              <button onClick={startEditArticle} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-gray-500 hover:text-green-700 hover:bg-green-50 cursor-pointer transition-colors">
+                <Pencil size={13} /> {ref?.article ? "Edit" : "Add"}
+              </button>
+            )}
+          </div>
+
+          {editingArticle ? (
+            <div className="space-y-3">
+              <div>
+                <label className={labelClass}>Citation</label>
+                <textarea value={articleDraft.article} onChange={(e) => setArticleDraft({ ...articleDraft, article: e.target.value })} rows={3} placeholder="Author(s) (Year) Title. Journal Volume:Pages" className={inputClass + " resize-none"} autoFocus />
+              </div>
+              <div>
+                <label className={labelClass}>DOI</label>
+                <input value={articleDraft.doi} onChange={(e) => setArticleDraft({ ...articleDraft, doi: e.target.value })} placeholder="e.g. 10.1038/23475" className={inputClass} />
+              </div>
+              <div className="flex items-center gap-2 pt-1">
+                <button onClick={saveArticle} className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-green-600 text-white text-xs font-semibold hover:bg-green-700 cursor-pointer transition-colors">
+                  <Check size={13} /> Save
+                </button>
+                <button onClick={() => setEditingArticle(false)} className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-gray-100 text-gray-600 text-xs font-semibold hover:bg-gray-200 cursor-pointer transition-colors">
+                  <X size={13} /> Cancel
+                </button>
+              </div>
+            </div>
+          ) : ref?.article ? (
+            <div>
+              <p className="text-gray-700 leading-relaxed text-sm mb-3">{ref.article}</p>
+              {ref.doi && (
+                <a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border transition-colors hover:bg-green-50"
+                  style={{ color: COLORS.primary, borderColor: COLORS.primary + "40" }}>
+                  <ExternalLink size={12} /> DOI: {ref.doi}
+                </a>
+              )}
+            </div>
+          ) : (
+            <p className="text-gray-400 text-sm italic">
+              No published article on record.{isStaff && <span className="text-green-600 not-italic"> Use the Add button above to add one.</span>}
+            </p>
+          )}
         </section>
 
         {/* Affected species */}
@@ -123,10 +279,7 @@ export default function MarkerArticle() {
         {/* Prev / next */}
         <div className="flex items-center justify-between border-t border-gray-200 pt-6">
           {prev ? (
-            <button
-              onClick={() => navigate(`/markers/${categoryId}/${prev.idx}`)}
-              className="flex items-center gap-2 text-sm text-gray-400 hover:text-gray-800 cursor-pointer group"
-            >
+            <button onClick={() => navigate(`/markers/${categoryId}/${prev.idx}`)} className="flex items-center gap-2 text-sm text-gray-400 hover:text-gray-800 cursor-pointer group">
               <ArrowLeft size={16} className="group-hover:-translate-x-0.5 transition-transform" />
               <div className="text-left">
                 <div className="text-[10px] uppercase tracking-widest text-gray-400 mb-0.5">Previous</div>
@@ -135,10 +288,7 @@ export default function MarkerArticle() {
             </button>
           ) : <div />}
           {next ? (
-            <button
-              onClick={() => navigate(`/markers/${categoryId}/${next.idx}`)}
-              className="flex items-center gap-2 text-sm text-gray-400 hover:text-gray-800 cursor-pointer group text-right"
-            >
+            <button onClick={() => navigate(`/markers/${categoryId}/${next.idx}`)} className="flex items-center gap-2 text-sm text-gray-400 hover:text-gray-800 cursor-pointer group text-right">
               <div>
                 <div className="text-[10px] uppercase tracking-widest text-gray-400 mb-0.5">Next</div>
                 <div className="font-medium text-gray-700 max-w-[180px] truncate">{next.marker.name}</div>
