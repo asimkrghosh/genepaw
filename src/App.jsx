@@ -15,6 +15,7 @@ const VetPortal = React.lazy(() => import("./VetPortal.jsx"));
 const AdminPortal = React.lazy(() => import("./AdminPortal.jsx"));
 const StaffLogin = React.lazy(() => import("./StaffLogin.jsx"));
 const MarkerArticle = React.lazy(() => import("./MarkerArticle.jsx"));
+const SpeciesPage = React.lazy(() => import("./SpeciesPage.jsx"));
 
 // P4: catches lazy-import failures (network error, stale chunk) so the whole app doesn't blank out
 class ErrorBoundary extends React.Component {
@@ -100,6 +101,7 @@ export default function App() {
           <Route path="/vet-report" element={<VetPortal />} />
           <Route path="/staff-login" element={<StaffLogin />} />
           <Route path="/markers/:categoryId/:markerIdx" element={<MarkerArticle />} />
+          <Route path="/species/:speciesName" element={<SpeciesPage />} />
           <Route path="/admin" element={<AuthGuard><AdminPortal /></AuthGuard>} />
           <Route path="*" element={<NotFound />} />
         </Routes>

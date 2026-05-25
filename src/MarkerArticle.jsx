@@ -243,7 +243,10 @@ export default function MarkerArticle() {
           </h2>
           <div className="flex flex-wrap gap-2">
             {species.map((s, i) => (
-              <span key={i} className="text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-medium italic">{s}</span>
+              <button key={i} onClick={() => navigate(`/species/${encodeURIComponent(s)}`)}
+                className="text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-medium italic hover:bg-green-100 hover:text-green-700 cursor-pointer transition-colors">
+                {s}
+              </button>
             ))}
           </div>
         </section>
