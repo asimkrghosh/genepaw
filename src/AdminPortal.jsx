@@ -5,6 +5,7 @@ import { COLORS, SectionTitle, Badge, Navbar, Footer, DEFAULT_PRICING } from "./
 import { SPECIES_DATA, STEP_TEMPLATES } from "./CustomerPortal.jsx";
 import { useApp } from "./AppContext.jsx";
 import { RISK_LEVELS, SIGNIFICANCE_OPTIONS } from "./markerData.js";
+import SpeciesSelect from "./SpeciesSelect.jsx";
 export { makeMarker, MARKER_CATEGORIES } from "./markerData.js";
 
 const SPECIES_ICONS = Object.fromEntries(SPECIES_DATA.map(s => [s.name, s.icon]));
@@ -812,7 +813,7 @@ function MarkersAdmin() {
                                 <option value="" disabled>— Risk Level —</option>
                                 {RISK_LEVELS.map((r) => <option key={r} value={r}>{r}</option>)}
                               </select>
-                              <input value={editMarkerValue.species} onChange={(e) => setEditMarkerValue({ ...editMarkerValue, species: e.target.value })} placeholder="Affected Species" className="px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-green-100" />
+                              <SpeciesSelect value={editMarkerValue.species} onChange={(v) => setEditMarkerValue({ ...editMarkerValue, species: v })} />
                             </div>
                             <select value={editMarkerValue.significance} onChange={(e) => setEditMarkerValue({ ...editMarkerValue, significance: e.target.value })} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none">
                               <option value="" disabled>— Clinical Significance —</option>
@@ -957,7 +958,7 @@ function MarkersAdmin() {
                           <option value="" disabled>— Risk Level —</option>
                           {RISK_LEVELS.map((r) => <option key={r} value={r}>{r}</option>)}
                         </select>
-                        <input value={newMarker.species} onChange={(e) => setNewMarker({ ...newMarker, species: e.target.value })} placeholder="Affected Species" className="px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100" />
+                        <SpeciesSelect value={newMarker.species} onChange={(v) => setNewMarker({ ...newMarker, species: v })} />
                       </div>
                       <select value={newMarker.significance} onChange={(e) => setNewMarker({ ...newMarker, significance: e.target.value })} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none">
                         <option value="" disabled>— Clinical Significance —</option>

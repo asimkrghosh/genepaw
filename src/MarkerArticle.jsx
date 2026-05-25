@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router";
 import { ArrowLeft, ArrowRight, Dna, AlertTriangle, BookOpen, Globe2, Activity, Tag, ExternalLink, Pencil, Check, X } from "lucide-react";
 import { COLORS, Navbar, Footer } from "./shared.jsx";
 import { RISK_LEVELS, SIGNIFICANCE_OPTIONS } from "./markerData.js";
+import SpeciesSelect from "./SpeciesSelect.jsx";
 import { useApp } from "./AppContext.jsx";
 
 const RISK_STYLE = {
@@ -167,7 +168,7 @@ export default function MarkerArticle() {
                 </div>
                 <div>
                   <label className={labelClass}>Affected Species</label>
-                  <input value={markerDraft.species} onChange={(e) => setMarkerDraft({ ...markerDraft, species: e.target.value })} className={inputClass} placeholder="Comma-separated species" />
+                  <SpeciesSelect value={markerDraft.species} onChange={(v) => setMarkerDraft({ ...markerDraft, species: v })} />
                 </div>
               </div>
               <div>
