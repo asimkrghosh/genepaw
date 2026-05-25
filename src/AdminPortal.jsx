@@ -721,7 +721,7 @@ function MarkersAdmin() {
   const [loading, setLoading] = useState(true);
   const [editingMarker, setEditingMarker] = useState(null);
   const [editMarkerValue, setEditMarkerValue] = useState({ name: "", gene: "", risk: "Low", species: "", significance: SIGNIFICANCE_OPTIONS[0], description: "" });
-  const [newMarker, setNewMarker] = useState({ catId: null, name: "", gene: "", risk: "", species: "", significance: "", description: "" });
+  const [newMarker, setNewMarker] = useState({ catId: null, name: "", gene: "", risk: "", species: "", significance: "", description: "", article: "", doi: "" });
   const [viewingMarker, setViewingMarker] = useState(null);
   const [expandedCats, setExpandedCats] = useState([]);
   const [confirmDelete, setConfirmDelete] = useState(null);
@@ -752,7 +752,10 @@ function MarkersAdmin() {
   const addMarker = (catId) => {
     if (!newMarker.name.trim()) return;
     ctxAddMarker(catId, { name: newMarker.name.trim(), gene: newMarker.gene.trim(), risk: newMarker.risk, species: newMarker.species.trim(), significance: newMarker.significance, description: newMarker.description.trim() });
-    setNewMarker({ catId: null, name: "", gene: "", risk: "", species: "", significance: "", description: "" });
+    if (newMarker.gene.trim() && (newMarker.article.trim() || newMarker.doi.trim())) {
+      updateArticle(newMarker.gene.trim(), { article: newMarker.article.trim(), doi: newMarker.doi.trim() });
+    }
+    setNewMarker({ catId: null, name: "", gene: "", risk: "", species: "", significance: "", description: "", article: "", doi: "" });
     flash();
   };
 
@@ -959,9 +962,14 @@ function MarkersAdmin() {
                         {SIGNIFICANCE_OPTIONS.map((sig) => <option key={sig} value={sig}>{sig}</option>)}
                       </select>
                       <textarea value={newMarker.description} onChange={(e) => setNewMarker({ ...newMarker, description: e.target.value })} placeholder="Description" rows={2} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none resize-none focus:border-green-400 focus:ring-2 focus:ring-green-100" />
+                      <div className="pt-2 border-t border-gray-100 space-y-2">
+                        <p className="text-[10px] uppercase font-semibold text-gray-400 flex items-center gap-1"><BookOpen size={10} /> Published Article <span className="font-normal normal-case text-gray-300">(optional)</span></p>
+                        <textarea value={newMarker.article} onChange={(e) => setNewMarker({ ...newMarker, article: e.target.value })} placeholder="Author(s) (Year) Title. Journal Volume:Pages" rows={2} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none resize-none focus:border-green-400 focus:ring-2 focus:ring-green-100" />
+                        <input value={newMarker.doi} onChange={(e) => setNewMarker({ ...newMarker, doi: e.target.value })} placeholder="DOI e.g. 10.1038/23475" className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-100" />
+                      </div>
                       <div className="flex items-center gap-2">
                         <button onClick={() => addMarker(cat.id)} className="px-3 py-1 rounded-lg bg-green-100 text-green-700 hover:bg-green-200 cursor-pointer text-xs font-medium flex items-center gap-1"><Check size={14} /> Add</button>
-                        <button onClick={() => setNewMarker({ catId: null, name: "", gene: "", risk: "", species: "", significance: "", description: "" })} className="px-3 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-gray-200 cursor-pointer text-xs font-medium flex items-center gap-1"><X size={14} /> Cancel</button>
+                        <button onClick={() => setNewMarker({ catId: null, name: "", gene: "", risk: "", species: "", significance: "", description: "", article: "", doi: "" })} className="px-3 py-1 rounded-lg bg-gray-100 text-gray-500 hover:bg-gray-200 cursor-pointer text-xs font-medium flex items-center gap-1"><X size={14} /> Cancel</button>
                       </div>
                     </div>
                   ) : (
