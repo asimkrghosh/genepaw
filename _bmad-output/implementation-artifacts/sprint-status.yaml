@@ -42,6 +42,7 @@ tracking_system: file-system
 story_location: _bmad-output/implementation-artifacts
 
 development_status:
+
   # ─── Epic 1: Foundation & Authentication ───
   epic-1: done
   1-1-backend-project-scaffold-and-docker-compose: done
@@ -71,17 +72,17 @@ development_status:
   epic-3-retrospective: optional
 
   # ─── Epic 4: Lab Results Pipeline & Display ───
-  epic-4: in-progress
+  epic-4: done
   4-1-backend-lab-results-webhook: done
   4-2-backend-results-retrieval-api: done
   4-3-frontend-results-reveal-page: done
-  4-4-frontend-consumer-pdf-report-download: backlog
+  4-4-frontend-consumer-pdf-report-download: done
   epic-4-retrospective: optional
 
   # ─── Epic 5: Veterinarian Channel ───
-  epic-5: backlog
-  5-1-backend-vet-registration-api: backlog
-  5-2-frontend-vet-partner-landing-page: backlog
+  epic-5: in-progress
+  5-1-backend-vet-registration-api: done
+  5-2-frontend-vet-partner-landing-page: review
   5-3-frontend-vet-report-showcase-page: backlog
   5-4-frontend-clinical-pdf-generation: backlog
   epic-5-retrospective: optional

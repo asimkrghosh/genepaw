@@ -507,3 +507,187 @@ export function generateVetReportPDF(petName, sampleId, results) {
 
   doc.save(`GenePaw_Vet_Report_${petName.replace(/\s+/g, "_")}.pdf`);
 }
+
+// ─── Consumer PDF ───
+
+const STATUS_LABELS = { green: "Healthy", amber: "Watch", red: "At Risk" };
+
+export function generateConsumerPDF(resultData, orderId) {
+  const doc = new jsPDF();
+  const pageW = doc.internal.pageSize.getWidth();
+  const pageH = doc.internal.pageSize.getHeight();
+  const margin = 14;
+  const contentW = pageW - margin * 2;
+  const filename = orderId ? `GenePaw_Report_${orderId}.pdf` : "GenePaw_Report_sample.pdf";
+
+  const C = {
+    green: [15, 74, 50],
+    greenLight: [45, 157, 111],
+    text: [31, 41, 55],
+    textLight: [107, 114, 128],
+    white: [255, 255, 255],
+    bgLight: [248, 250, 249],
+    border: [229, 231, 235],
+  };
+
+  // ── Header banner ──
+  doc.setFillColor(...C.green);
+  doc.rect(0, 0, pageW, 42, "F");
+  doc.setFillColor(...C.greenLight);
+  doc.rect(0, 42, pageW, 2, "F");
+
+  doc.setTextColor(...C.white);
+  doc.setFontSize(22);
+  doc.setFont("helvetica", "bold");
+  doc.text("GenePaw", margin, 18);
+  doc.setFontSize(9);
+  doc.setFont("helvetica", "normal");
+  doc.text("Multi-Species Genomics Platform", margin, 26);
+  doc.setFontSize(8);
+  doc.text("Consumer Genomic Report", margin, 33);
+
+  doc.setFontSize(9);
+  doc.setFont("helvetica", "bold");
+  doc.text(
+    new Date().toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" }),
+    pageW - margin, 18, { align: "right" }
+  );
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(8);
+  if (orderId) doc.text(`Order ID: ${orderId}`, pageW - margin, 26, { align: "right" });
+
+  let y = 52;
+
+  // ── Order summary box ──
+  doc.setFillColor(...C.bgLight);
+  doc.setDrawColor(...C.border);
+  doc.setLineWidth(0.3);
+  doc.roundedRect(margin, y, contentW, 14, 2, 2, "FD");
+  doc.setFontSize(13);
+  doc.setFont("helvetica", "bold");
+  doc.setTextColor(...C.green);
+  doc.text(orderId ? `Order: ${orderId}` : "Sample Genomic Report", margin + 6, y + 9);
+  y += 20;
+
+  // ── Section 1: Breed Composition ──
+  doc.setFillColor(...C.green);
+  doc.roundedRect(margin, y, contentW, 10, 2, 2, "F");
+  doc.setTextColor(...C.white);
+  doc.setFontSize(11);
+  doc.setFont("helvetica", "bold");
+  doc.text("1. Breed Composition", margin + 5, y + 7);
+  y += 14;
+
+  const breedRows = (resultData.breed_composition ?? []).map(b => [b.species, `${b.percentage}%`]);
+  doc.autoTable({
+    head: [["Breed", "Percentage"]],
+    body: breedRows,
+    startY: y,
+    margin: { left: margin, right: margin },
+    styles: { fontSize: 9, cellPadding: 3 },
+    headStyles: { fillColor: C.green, textColor: C.white, fontStyle: "bold" },
+    alternateRowStyles: { fillColor: [248, 250, 249] },
+  });
+  y = doc.lastAutoTable.finalY + 8;
+
+  // ── Section 2: Health Markers ──
+  if (y + 20 > pageH - 30) { doc.addPage(); y = 20; }
+  doc.setFillColor(...C.green);
+  doc.roundedRect(margin, y, contentW, 10, 2, 2, "F");
+  doc.setTextColor(...C.white);
+  doc.setFontSize(11);
+  doc.setFont("helvetica", "bold");
+  doc.text("2. Health Markers", margin + 5, y + 7);
+  y += 14;
+
+  const healthRows = (resultData.health_markers ?? []).map(m => [
+    m.marker,
+    STATUS_LABELS[m.status] ?? m.status,
+    m.description,
+  ]);
+  doc.autoTable({
+    head: [["Gene", "Status", "Notes"]],
+    body: healthRows,
+    startY: y,
+    margin: { left: margin, right: margin },
+    styles: { fontSize: 8, cellPadding: 3, overflow: "linebreak" },
+    headStyles: { fillColor: C.green, textColor: C.white, fontStyle: "bold" },
+    columnStyles: { 0: { cellWidth: 28 }, 1: { cellWidth: 22 }, 2: { cellWidth: "auto" } },
+    alternateRowStyles: { fillColor: [248, 250, 249] },
+  });
+  y = doc.lastAutoTable.finalY + 8;
+
+  // ── Section 3: Trait Scores ──
+  if (y + 20 > pageH - 30) { doc.addPage(); y = 20; }
+  doc.setFillColor(...C.green);
+  doc.roundedRect(margin, y, contentW, 10, 2, 2, "F");
+  doc.setTextColor(...C.white);
+  doc.setFontSize(11);
+  doc.setFont("helvetica", "bold");
+  doc.text("3. Behavioral Trait Scores", margin + 5, y + 7);
+  y += 16;
+
+  const traits = Object.entries(resultData.trait_scores ?? {});
+  const barW = 80;
+  const labelX = margin + 4;
+  const barX = margin + 55;
+  traits.forEach(([name, score]) => {
+    if (y + 10 > pageH - 30) { doc.addPage(); y = 20; }
+    doc.setFontSize(8);
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(...C.text);
+    doc.text(name, labelX, y + 5);
+    doc.setFillColor(220, 220, 220);
+    doc.roundedRect(barX, y, barW, 6, 2, 2, "F");
+    const fill = Math.min(Math.max(score, 0), 100) / 100 * barW;
+    doc.setFillColor(...C.greenLight);
+    doc.roundedRect(barX, y, fill, 6, 2, 2, "F");
+    doc.setFontSize(8);
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(...C.text);
+    doc.text(`${score}/100`, barX + barW + 4, y + 5);
+    y += 10;
+  });
+  y += 4;
+
+  // ── Section 4: Lineage ──
+  if (y + 20 > pageH - 30) { doc.addPage(); y = 20; }
+  doc.setFillColor(...C.green);
+  doc.roundedRect(margin, y, contentW, 10, 2, 2, "F");
+  doc.setTextColor(...C.white);
+  doc.setFontSize(11);
+  doc.setFont("helvetica", "bold");
+  doc.text("4. Genetic Lineage", margin + 5, y + 7);
+  y += 16;
+
+  const lineage = resultData.lineage ?? {};
+  [["Paternal Line", lineage.paternal_line], ["Maternal Line", lineage.maternal_line]].forEach(([label, value]) => {
+    if (y + 14 > pageH - 30) { doc.addPage(); y = 20; }
+    doc.setFontSize(8);
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(...C.textLight);
+    doc.text(label.toUpperCase(), margin + 4, y + 5);
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(...C.text);
+    doc.text(value ?? "—", margin + 44, y + 5);
+    y += 10;
+  });
+
+  // ── Footer on every page ──
+  const totalPages = doc.internal.getNumberOfPages();
+  for (let i = 1; i <= totalPages; i++) {
+    doc.setPage(i);
+    const ph = doc.internal.pageSize.getHeight();
+    doc.setFillColor(...C.green);
+    doc.rect(0, ph - 14, pageW, 14, "F");
+    doc.setFillColor(...C.greenLight);
+    doc.rect(0, ph - 15, pageW, 1, "F");
+    doc.setTextColor(...C.white);
+    doc.setFontSize(7);
+    doc.setFont("helvetica", "normal");
+    doc.text("GenePaw | www.genepaw.com | support@genepaw.com", margin, ph - 5);
+    doc.text(`Page ${i} of ${totalPages}`, pageW - margin, ph - 5, { align: "right" });
+  }
+
+  doc.save(filename);
+}

@@ -68,7 +68,7 @@ Implemented in Story 1.3. Route file: `genepaw-api/app/api/v1/auth.py`.
 
 **Request body** (`application/json`):
 ```json
-{ "email": "staff@genepaw.com", "password": "secret" }
+{ "email": "staff@genepaw.com", "password": "demo123" }
 ```
 
 **Response 200**:

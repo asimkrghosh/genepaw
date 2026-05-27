@@ -7,6 +7,7 @@ import {
 import { useParams, useSearchParams } from "react-router";
 import { useQuery } from "@tanstack/react-query";
 import { COLORS, Button, Navbar, Footer } from "./shared.jsx";
+import { generateConsumerPDF } from "./reportPdf.js";
 import { useApp } from "./AppContext.jsx";
 import { apiFetch } from "./api.js";
 
@@ -207,8 +208,8 @@ function ResultsDashboard({ result_data, orderId }) {
                   {!orderId && <p className="text-green-200 text-sm mt-1">Demo — order a kit to see your pet's results</p>}
                 </div>
               </div>
-              <Button size="sm" variant="secondary" disabled>
-                <Download size={16} /> Download PDF (Coming Soon)
+              <Button size="sm" variant="secondary" onClick={() => generateConsumerPDF(result_data, orderId)}>
+                <Download size={16} /> Download PDF Report
               </Button>
             </div>
           </div>

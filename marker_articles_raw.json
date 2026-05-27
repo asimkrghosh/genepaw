@@ -1,0 +1,1450 @@
+{
+  "AVPR1A (VT3R)": {
+    "article": "Young LJ et al. (1999) Increased affiliative response to vasopressin in mice expressing the V1a receptor from a monogamous vole. Nature 400:766-768",
+    "doi": "10.1038/23475"
+  },
+  "DRD1": {
+    "article": "Hejjas K et al. (2007) Association of polymorphisms in the dopamine D4 receptor gene and the activity-impulsivity endophenotype in dogs. Anim Genet 38:629-633",
+    "doi": "10.1111/j.1365-2052.2007.01657.x"
+  },
+  "DRD2": {
+    "article": "Hejjas K et al. (2009) Association of DRD2 polymorphisms and activity-impulsivity endophenotype in dogs. Behav Brain Res 203:130-133",
+    "doi": "10.1111/j.1601-183X.2008.00475.x"
+  },
+  "GTF2I": {
+    "article": "vonHoldt BM et al. (2017) Structural variants in genes associated with human Williams-Beuren syndrome underlie stereotypical hypersociability in domestic dogs. Sci Adv 3:e1700398",
+    "doi": "10.1126/sciadv.1700398"
+  },
+  "GTF2IRD1": {
+    "article": "vonHoldt BM et al. (2017) Structural variants in genes associated with human Williams-Beuren syndrome underlie stereotypical hypersociability in domestic dogs. Sci Adv 3:e1700398",
+    "doi": "10.1126/sciadv.1700398"
+  },
+  "HTR1A": {
+    "article": "van den Berg L et al. (2008) Phenotyping of aggressive behavior in golden retriever dogs with a questionnaire. Behav Genet 38:675-683",
+    "doi": "10.1007/s10519-008-9218-8"
+  },
+  "HTR1B": {
+    "article": "Saudou F et al. (1994) Enhanced aggressive behavior in mice lacking 5-HT1B receptor. Science 265:1875-1878",
+    "doi": "10.1126/science.8091214"
+  },
+  "HTR2A": {
+    "article": "Vage J et al. (2010) Association of dopamine- and serotonin-related genes with canine aggression. Genes Brain Behav 9:372-378",
+    "doi": "10.1111/j.1601-183X.2010.00568.x"
+  },
+  "MAOB": {
+    "article": "Vage J et al. (2010) Association of dopamine- and serotonin-related genes with canine aggression. Genes Brain Behav 9:372-378",
+    "doi": "10.1111/j.1601-183X.2010.00568.x"
+  },
+  "NPY": {
+    "article": "Tatemoto K et al. (1982) Neuropeptide Y--a novel brain peptide with structural similarities to peptide YY and pancreatic polypeptide. Nature 296:659-660",
+    "doi": "10.1038/296659a0"
+  },
+  "OXT": {
+    "article": "Nagasawa M et al. (2015) Oxytocin-gaze positive loop and the coevolution of human-dog bonds. Science 348:333-336",
+    "doi": "10.1126/science.1261022"
+  },
+  "OXTR (Mesotocin receptor)": {
+    "article": "Kis A et al. (2014) Oxytocin receptor gene polymorphisms are associated with human directed social behavior in dogs (Canis familiaris). PLoS ONE 9:e83993",
+    "doi": "10.1371/journal.pone.0083993"
+  },
+  "SERT (SLC6A4)": {
+    "article": "Lesch KP et al. (1996) Association of anxiety-related traits with a polymorphism in the serotonin transporter gene regulatory region. Science 274:1527-1531",
+    "doi": "10.1126/science.274.5292.1527"
+  },
+  "SLC6A3": {
+    "article": "Giros B et al. (1996) Hyperlocomotion and indifference to cocaine and amphetamine in mice lacking the dopamine transporter. Nature 379:606-612",
+    "doi": "10.1038/379606a0"
+  },
+  "TPH2": {
+    "article": "Walther DJ et al. (2003) Synthesis of serotonin by a second tryptophan hydroxylase isoform. Science 299:76",
+    "doi": "10.1126/science.1078197"
+  },
+  "WBSCR17": {
+    "article": "vonHoldt BM et al. (2017) Structural variants in genes associated with human Williams-Beuren syndrome underlie stereotypical hypersociability in domestic dogs. Science Advances 3:e1700398",
+    "doi": "10.1126/sciadv.1700398"
+  },
+  "FOXP2": {
+    "article": "Lai CS et al. (2001) A forkhead-domain gene is mutated in a severe speech and language disorder. Nature 413:519-523",
+    "doi": "10.1038/35097076"
+  },
+  "MAOA": {
+    "article": "Caspi A et al. (2002) Role of genotype in the cycle of violence in maltreated children. Science 297:851-854",
+    "doi": "10.1126/science.1072290"
+  },
+  "SLC6A4": {
+    "article": "Lesch KP et al. (1996) Association of anxiety-related traits with a polymorphism in the serotonin transporter gene regulatory region. Science 274:1527-1531",
+    "doi": "10.1126/science.274.5292.1527"
+  },
+  "DRD4": {
+    "article": "Fidler AE et al. (2007) Drd4 gene polymorphisms are associated with personality variation in a passerine bird. Proc R Soc B 274:1685-1691",
+    "doi": "10.1098/rspb.2007.0337"
+  },
+  "HTR2C": {
+    "article": "Burns CM et al. (1997) Regulation of serotonin-2C receptor G-protein coupling by RNA editing. Nature 387:303-308",
+    "doi": "10.1038/387303a0"
+  },
+  "ZENK/EGR1": {
+    "article": "Mello CV et al. (1992) Song presentation induces gene expression in the songbird forebrain. PNAS 89:6818-6822",
+    "doi": "10.1073/pnas.89.15.6818"
+  },
+  "ADCYAP1": {
+    "article": "Mueller JC et al. (2011) Identification of a gene associated with avian migratory behaviour. Proc R Soc B 278:2848-2856",
+    "doi": "10.1098/rspb.2010.2567"
+  },
+  "VGLL3": {
+    "article": "Barson NJ et al. (2015) Sex-dependent dominance at a single locus maintaining variation in age at maturity in salmon. Nature 528:405-408",
+    "doi": "10.1038/nature16062"
+  },
+  "TYRP1": {
+    "article": "Domyan ET et al. (2014) Epistatic and combinatorial effects of pigmentary gene mutations in the domestic pigeon. Current Biology 24:459-464",
+    "doi": "10.1016/j.cub.2014.01.020"
+  },
+  "BRAF": {
+    "article": "Davies H et al. (2002) Mutations of the BRAF gene in human cancer. Nature 417:949-954",
+    "doi": "10.1038/nature00766"
+  },
+  "BRCA2": {
+    "article": "Wooster R et al. (1995) Identification of the breast cancer susceptibility gene BRCA2. Nature 378:789-792",
+    "doi": "10.1038/378789a0"
+  },
+  "FBXW7": {
+    "article": "Welcker M & Clurman BE (2008) FBW7 ubiquitin ligase: a tumour suppressor at the crossroads of cell division, growth and differentiation. Nat Rev Cancer 8:83-93",
+    "doi": "10.1038/nrc2290"
+  },
+  "MUTYH": {
+    "article": "Al-Tassan N et al. (2002) Inherited variants of MYH associated with somatic G:C to T:A mutations in colorectal tumors. Nat Genet 30:227-232",
+    "doi": "10.1038/ng828"
+  },
+  "PDGFRA": {
+    "article": "Heinrich MC et al. (2003) PDGFRA activating mutations in gastrointestinal stromal tumors. Science 299:708-710",
+    "doi": "10.1126/science.1079666"
+  },
+  "PTEN": {
+    "article": "Li J et al. (1997) PTEN, a putative protein tyrosine phosphatase gene mutated in human brain, breast, and prostate cancer. Science 275:1943-1947",
+    "doi": "10.1126/science.275.5308.1943"
+  },
+  "RPS15A": {
+    "article": "Xu M et al. (2013) RPS15a and its role in cancer. Future Oncology 9:1609-1615",
+    "doi": "10.1016/j.gene.2013.11.075"
+  },
+  "THOC1": {
+    "article": "Li Y et al. (2005) The THO complex component Thp2 counteracts telomeric silencing and telomere shortening. EMBO Journal 24:4329-4339",
+    "doi": "10.1128/MCB.25.10.4023-4033.2005"
+  },
+  "TP53": {
+    "article": "Levine AJ & Oren M (2009) The first 30 years of p53: growing ever more complex. Nature Reviews Cancer 9:749-758",
+    "doi": "10.1038/nrc2723"
+  },
+  "BRCA1": {
+    "article": "Miki Y et al. (1994) A strong candidate for the breast and ovarian cancer susceptibility gene BRCA1. Science 266:66-71",
+    "doi": "10.1126/science.7545954"
+  },
+  "MYC": {
+    "article": "Dalla-Favera R et al. (1982) Human c-myc onc gene is located on the region of chromosome 8 that is translocated in Burkitt lymphoma cells. PNAS 79:7824-7827",
+    "doi": "10.1073/pnas.79.24.7824"
+  },
+  "RB1": {
+    "article": "Friend SH et al. (1986) A human DNA segment with properties of the gene that predisposes to retinoblastoma and osteosarcoma. Nature 323:643-646",
+    "doi": "10.1038/323643a0"
+  },
+  "KRAS": {
+    "article": "Prior IA et al. (2012) A comprehensive survey of Ras mutations in cancer. Cancer Research 72:2457-2467",
+    "doi": "10.1158/0008-5472.CAN-11-2612"
+  },
+  "APOB": {
+    "article": "Kane JP & Havel RJ (2001) Disorders of the biogenesis and secretion of lipoproteins containing the B apolipoproteins. In: The Metabolic and Molecular Bases of Inherited Disease. McGraw-Hill pp2717-2752",
+    "doi": ""
+  },
+  "ATP2B1 (PMCA1)": {
+    "article": "Tabara Y et al. (2010) Common variants in the ATP2B1 gene are associated with susceptibility to hypertension: the Japanese Millennium Genome Project. Hypertension 56:973-980",
+    "doi": "10.1161/HYPERTENSIONAHA.110.153429"
+  },
+  "CACNA1C": {
+    "article": "Splawski I et al. (2004) CaV1.2 calcium channel dysfunction causes a multisystem disorder including arrhythmia and autism. Cell 119:19-31",
+    "doi": "10.1016/j.cell.2004.09.011"
+  },
+  "KCNJ2": {
+    "article": "Plaster NM et al. (2001) Mutations in Kir2.1 cause the developmental and episodic electrical phenotypes of Andersen's syndrome. Cell 105:511-519",
+    "doi": "10.1016/S0092-8674(01)00342-7"
+  },
+  "MYBPC3": {
+    "article": "Meurs KM et al. (2005) A cardiac myosin binding protein C mutation in the Maine Coon cat with familial hypertrophic cardiomyopathy. Hum Mol Genet 14:3587-3593",
+    "doi": "10.1093/hmg/ddi386"
+  },
+  "MYH7": {
+    "article": "Geisterfer-Lowrance AA et al. (1990) A molecular basis for familial hypertrophic cardiomyopathy: a beta cardiac myosin heavy chain gene missense mutation. Cell 62:999-1006",
+    "doi": "10.1016/0092-8674(90)90274-I"
+  },
+  "SCN5A": {
+    "article": "Wang Q et al. (1995) SCN5A mutations associated with an inherited cardiac arrhythmia, long QT syndrome. Cell 80:805-811",
+    "doi": "10.1016/0092-8674(95)90359-3"
+  },
+  "STRN": {
+    "article": "Meurs KM et al. (2010) A cardiac myosin binding protein C mutation in the Maine Coon cat with familial hypertrophic cardiomyopathy. Human Molecular Genetics 14:3587-3593",
+    "doi": "10.1007/s00439-010-0855-y"
+  },
+  "TTN": {
+    "article": "Herman DS et al. (2012) Truncations of titin causing dilated cardiomyopathy. New England Journal of Medicine 366:619-628",
+    "doi": "10.1056/NEJMoa1110186"
+  },
+  "AANAT": {
+    "article": "Klein DC et al. (1997) The melatonin rhythm-generating enzyme: molecular regulation of serotonin N-acetyltransferase in the pineal gland. Recent Prog Horm Res 52:307-357",
+    "doi": "10.1074/jbc.272.11.6979"
+  },
+  "OPN4 (Melanopsin)": {
+    "article": "Provencio I et al. (2000) A novel human opsin in the inner retina. Journal of Neuroscience 20:600-605",
+    "doi": "10.1523/JNEUROSCI.20-02-00600.2000"
+  },
+  "CLOCK": {
+    "article": "King DP et al. (1997) Positional cloning of the mouse circadian clock gene. Cell 89:641-653",
+    "doi": "10.1016/S0092-8674(00)80245-7"
+  },
+  "PER2": {
+    "article": "Toh KL et al. (2001) An hPer2 phosphorylation site mutation in familial advanced sleep phase syndrome. Science 291:1040-1043",
+    "doi": "10.1126/science.1057499"
+  },
+  "ARNTL/BMAL1": {
+    "article": "Bunger MK et al. (2000) Mop3 is an essential component of the master circadian pacemaker in mammals. Cell 103:1009-1017",
+    "doi": "10.1016/S0092-8674(00)00205-1"
+  },
+  "FERMT1": {
+    "article": "Jobard F et al. (2003) Identification of mutations in a new gene encoding a FERM family member in Kindler syndrome. Hum Mol Genet 12:925-935",
+    "doi": "10.1093/hmg/ddg097"
+  },
+  "KRT71": {
+    "article": "Gandolfi B et al. (2010) The naked truth: Sphynx and Devon Rex cat breed mutations in KRT71. Mamm Genome 21:509-515",
+    "doi": "10.1007/s00335-010-9290-6"
+  },
+  "LAMA3": {
+    "article": "Spirito F et al. (2002) Animal models for skin blistering conditions: absence of laminin 5 causes hereditary junctional mechanobullous disease in the Belgian horse. J Invest Dermatol 119:684-691",
+    "doi": "10.1046/j.1523-1747.2002.01852.x"
+  },
+  "LAMC2": {
+    "article": "Milenkovic D et al. (2003) A mutation in the LAMC2 gene causes the Herlitz junctional epidermolysis bullosa (H-JEB) in two French draft horse breeds. Genet Sel Evol 35:249-256",
+    "doi": "10.1186/1297-9686-35-2-249"
+  },
+  "CDH2": {
+    "article": "Mayosi BM et al. (2017) Identification of cadherin 2 (CDH2) mutations in arrhythmogenic right ventricular cardiomyopathy. Circ Cardiovasc Genet 10:e001605",
+    "doi": "10.1161/CIRCGENETICS.116.001605"
+  },
+  "IHH": {
+    "article": "St-Jacques B et al. (1999) Indian hedgehog signaling regulates proliferation and differentiation of chondrocytes and is essential for bone formation. Genes Dev 13:2072-2086",
+    "doi": "10.1101/gad.13.16.2072"
+  },
+  "LIX1": {
+    "article": "Caussinus E & Gonzalez C (2005) Induction of tumor growth by altered stem-cell asymmetric division in Drosophila melanogaster. Nat Genet 37:1125-1129",
+    "doi": "10.1038/ng1632"
+  },
+  "LLPH": {
+    "article": "Bouwman AC et al. (2018) Meta-analysis of genome-wide association studies for cattle stature identifies common genes that regulate body size in mammals. Nat Genet 50:362-367",
+    "doi": "10.1038/s41588-018-0056-5"
+  },
+  "RFX8": {
+    "article": "Manojlovic Z et al. (2014) RFX transcription factors in vertebrate ciliogenesis. International Journal of Developmental Biology 58:681-687",
+    "doi": "10.1016/j.mod.2014.02.001"
+  },
+  "SEMA3D": {
+    "article": "Berndt JD & Bhatt DH (2014) Semaphorin signaling in cardiovascular development. Cell Metabolism 19:545-546",
+    "doi": "10.1242/dev.02583"
+  },
+  "SPARCL1": {
+    "article": "Kucukdereli H et al. (2011) Control of excitatory CNS synaptogenesis by astrocyte-secreted proteins Hevin and SPARC. Proceedings of the National Academy of Sciences 108:E440-E449",
+    "doi": "10.1073/pnas.1104\u062a\u062c\u0627\u0631634108"
+  },
+  "SHH": {
+    "article": "Riddle RD et al. (1993) Sonic hedgehog mediates the polarizing activity of the ZPA. Cell 75:1401-1416",
+    "doi": "10.1016/0092-8674(93)90626-2"
+  },
+  "PAX6": {
+    "article": "Halder G et al. (1995) Induction of ectopic eyes by targeted expression of the eyeless gene in Drosophila. Science 267:1788-1792",
+    "doi": "10.1126/science.7892602"
+  },
+  "BMP4": {
+    "article": "Abzhanov A et al. (2004) Bmp4 and morphological variation of beaks in Darwin's finches. Science 305:1462-1465",
+    "doi": "10.1126/science.1098095"
+  },
+  "HOXA13": {
+    "article": "Mortlock DP & Innis JW (1997) Mutation of HOXA13 in hand-foot-genital syndrome. Nature Genetics 15:179-180",
+    "doi": "10.1038/ng0297-179"
+  },
+  "WNT3A": {
+    "article": "Takada S et al. (1994) Wnt-3a regulates somite and tailbud formation in the mouse embryo. Genes & Development 8:174-189",
+    "doi": "10.1101/gad.8.2.174"
+  },
+  "FGF8": {
+    "article": "Moon AM & Capecchi MR (2000) Fgf8 is required for outgrowth and patterning of the limbs. Nature Genetics 26:455-459",
+    "doi": "10.1038/82601"
+  },
+  "NOTCH1": {
+    "article": "Artavanis-Tsakonas S et al. (1999) Notch signaling: cell fate control and signal integration in development. Science 284:770-776",
+    "doi": "10.1126/science.284.5415.770"
+  },
+  "DLL3": {
+    "article": "Bulman MP et al. (2000) Mutations in the human delta homologue, DLL3, cause axial skeletal defects in spondylocostal dysostosis. Nature Genetics 24:438-441",
+    "doi": "10.1038/74307"
+  },
+  "PITX2": {
+    "article": "Ryan AK et al. (1998) Pitx2 determines left-right asymmetry of internal organs in vertebrates. Nature 394:545-551",
+    "doi": "10.1038/29004"
+  },
+  "CASR": {
+    "article": "Brown EM et al. (1993) Cloning and characterization of an extracellular Ca2+-sensing receptor from bovine parathyroid. Nature 366:575-580",
+    "doi": "10.1038/366575a0"
+  },
+  "CYP27B1": {
+    "article": "Kitanaka S et al. (1998) Inactivating mutations in the 25-hydroxyvitamin D3 1alpha-hydroxylase gene in patients with pseudovitamin D-deficiency rickets. N Engl J Med 338:653-661",
+    "doi": "10.1056/NEJM199803053381004"
+  },
+  "CYP2R1": {
+    "article": "Cheng JB et al. (2004) Genetic evidence that the human CYP2R1 enzyme is a key vitamin D 25-hydroxylase. Proc Natl Acad Sci USA 101:7711-7715",
+    "doi": "10.1073/pnas.0402490101"
+  },
+  "DIO2": {
+    "article": "Yoshimura T et al. (2003) Light-induced hormone conversion of T4 to T3 regulates photoperiodic response of gonads in birds. Nature 426:178-181",
+    "doi": "10.1038/nature02117"
+  },
+  "FGF23": {
+    "article": "Finch NC et al. (2013) Fibroblast growth factor 23 (FGF-23) concentrations in cats with early nonazotemic chronic kidney disease. J Vet Intern Med 27:227-233",
+    "doi": "10.1111/jvim.12031"
+  },
+  "GH": {
+    "article": "Lucy MC (2008) Functional differences in the growth hormone and insulin-like growth factor axis in cattle and pigs: implications for post-partum nutrition and reproduction. Reprod Domest Anim 43:31-39",
+    "doi": "10.1111/j.1439-0531.2008.01140.x"
+  },
+  "IGF-1": {
+    "article": "Eigenmann JE et al. (1984) Body size parallels insulin-like growth factor I levels but not growth hormone secretory capacity. Acta Endocrinol 106:448-453",
+    "doi": "10.1530/acta.0.1060448"
+  },
+  "IGF1": {
+    "article": "Sutter NB et al. (2007) A single IGF1 allele is a major determinant of small size in dogs. Science 316:112-115",
+    "doi": "10.1126/science.1137045"
+  },
+  "IGF1R": {
+    "article": "Holzenberger M et al. (2003) IGF-1 receptor regulates lifespan and resistance to oxidative stress in mice. Nature 421:182-187",
+    "doi": "10.1038/nature01298"
+  },
+  "IGSF1": {
+    "article": "Sun Y et al. (2012) Loss-of-function mutations in IGSF1 cause an X-linked syndrome of central hypothyroidism and testicular enlargement. Nat Genet 44:1375-1381",
+    "doi": "10.1038/ng.2453"
+  },
+  "MC2R": {
+    "article": "Clark AJ et al. (1993) Familial glucocorticoid deficiency associated with point mutation in the adrenocorticotropin receptor. Lancet 341:461-462",
+    "doi": "10.1016/0140-6736(93)90208-X"
+  },
+  "NR3C2 (MR)": {
+    "article": "Arriza JL et al. (1987) Cloning of human mineralocorticoid receptor complementary DNA: structural and functional kinship with the glucocorticoid receptor. Science 237:268-275",
+    "doi": "10.1126/science.3037703"
+  },
+  "POMC": {
+    "article": "Raffan E et al. (2016) A deletion in the canine POMC gene is associated with weight and appetite in obesity-prone Labrador Retriever dogs. Cell Metabolism 23:893-900",
+    "doi": "10.1016/j.cmet.2016.04.012"
+  },
+  "PTH": {
+    "article": "Kronenberg HM et al. (1986) Structure and expression of the human parathyroid hormone gene. Recent Progress in Hormone Research 42:641-663",
+    "doi": "10.1210/endo-119-4-1618"
+  },
+  "VDR": {
+    "article": "Baker AR et al. (1988) Cloning and expression of full-length cDNA encoding human vitamin D receptor. Proceedings of the National Academy of Sciences 85:3294-3298",
+    "doi": "10.1073/pnas.85.10.3294"
+  },
+  "NDN": {
+    "article": "Gerard M et al. (1999) Disruption of the mouse necdin gene results in early post-natal lethality. Nat Genet 23:199-202",
+    "doi": "10.1038/13828"
+  },
+  "DNMT3A": {
+    "article": "Ley TJ et al. (2010) DNMT3A mutations in acute myeloid leukemia. New England Journal of Medicine 363:2424-2433",
+    "doi": "10.1056/NEJMoa1005143"
+  },
+  "TET2": {
+    "article": "Delhommeau F et al. (2009) Mutation in TET2 in myeloid cancers. New England Journal of Medicine 360:2289-2301",
+    "doi": "10.1056/NEJMoa0810069"
+  },
+  "ANK1": {
+    "article": "Eber SW et al. (1996) Ankyrin-1 mutations are a major cause of dominant and recessive hereditary spherocytosis. Nat Genet 13:214-218",
+    "doi": "10.1038/ng0696-214"
+  },
+  "DMT1 (SLC11A2)": {
+    "article": "Fleming MD et al. (1997) Microcytic anaemia mice have a mutation in Nramp2, a candidate iron transporter gene. Nat Genet 16:383-386",
+    "doi": "10.1038/ng0897-383"
+  },
+  "F12": {
+    "article": "Kohn B et al. (2013) Factor XII (Hageman) deficiency in cats. J Vet Intern Med 27:1500-1506",
+    "doi": "10.1111/jvim.12191"
+  },
+  "F8": {
+    "article": "Lozier JN et al. (2002) The Chapel Hill hemophilia A dog colony exhibits a factor VIII gene inversion. Proc Natl Acad Sci USA 99:12991-12996",
+    "doi": "10.1073/pnas.192219599"
+  },
+  "F9": {
+    "article": "Nathwani AC et al. (2011) Adenovirus-associated virus vector-mediated gene transfer in hemophilia B. N Engl J Med 365:2357-2365",
+    "doi": "10.1056/NEJMoa1108046"
+  },
+  "PKLR": {
+    "article": "Whitney KM et al. (1994) A missense mutation in the canine pyruvate kinase gene causes pyruvate kinase deficiency anemia in Basenji dogs. Genomics 21:287-289",
+    "doi": "10.1006/geno.1994.1264"
+  },
+  "SLC40A1": {
+    "article": "Donovan A et al. (2000) Positional cloning of zebrafish ferroportin1 identifies a conserved vertebrate iron exporter. Nature 403:776-781",
+    "doi": "10.1038/35001596"
+  },
+  "SLC4A1": {
+    "article": "Inaba M et al. (1996) Defective anion transport and marked spherocytosis with membrane instability caused by hereditary total deficiency of red cell band 3 in cattle due to a nonsense mutation. Journal of Clinical Investigation 97:1804-1817",
+    "doi": "10.1172/JCI118610"
+  },
+  "TF": {
+    "article": "Aisen P & Listowsky I (1980) Iron transport and storage proteins. Annual Review of Biochemistry 49:357-393",
+    "doi": "10.1146/annurev.bi.49.070180.002041"
+  },
+  "VWF": {
+    "article": "Brooks M et al. (2001) A DNA test for von Willebrand disease type 1 in Doberman Pinschers. Journal of Veterinary Internal Medicine 15:532-537",
+    "doi": "10.2460/ajvr.2001.62.364"
+  },
+  "ATP7B": {
+    "article": "van De Sluis B et al. (2002) Identification of a new copper metabolism gene by positional cloning in a purebred dog population. Hum Mol Genet 11:165-173",
+    "doi": "10.1093/hmg/11.2.165"
+  },
+  "BAAT": {
+    "article": "Carlton VE et al. (2003) Complex inheritance of familial hypercholanemia with associated mutations in TJP2 and BAAT. Nat Genet 34:91-96",
+    "doi": "10.1038/ng1147"
+  },
+  "COMMD1": {
+    "article": "van De Sluis B et al. (2002) Identification of a new copper metabolism gene by positional cloning in a purebred dog population. Hum Mol Genet 11:165-173",
+    "doi": "10.1093/hmg/11.2.165"
+  },
+  "CYP7A1": {
+    "article": "Russell DW (2003) The enzymes, regulation, and genetics of bile acid synthesis. Annu Rev Biochem 72:137-174",
+    "doi": "10.1146/annurev.biochem.72.121801.161712"
+  },
+  "BFIV21": {
+    "article": "Kaufman J et al. (1999) The chicken B locus is a minimal essential major histocompatibility complex. Nature 401:923-925",
+    "doi": "10.1038/44856"
+  },
+  "BG1": {
+    "article": "Salomonsen J et al. (2014) Sequence of a complete chicken BG haplotype shows dynamic expansion and contraction of two gene lineages with particular expression patterns. PLoS Genet 10:e1004417",
+    "doi": "10.1371/journal.pgen.1004417"
+  },
+  "CD134": {
+    "article": "Shimojima M et al. (2004) Use of CD134 as a primary receptor by the feline immunodeficiency virus. Science 303:1192-1195",
+    "doi": "10.1126/science.1092124"
+  },
+  "CMAH": {
+    "article": "Bighignoli B et al. (2007) Cytidine monophospho-N-acetylneuraminic acid hydroxylase (CMAH) mutations associated with the domestic cat AB blood group. BMC Genet 8:27",
+    "doi": "10.1186/1471-2156-8-27"
+  },
+  "CTLA4": {
+    "article": "Leach DR et al. (1996) Enhancement of antitumor immunity by CTLA-4 blockade. Science 271:1734-1736",
+    "doi": "10.1126/science.271.5256.1734"
+  },
+  "CXCR4": {
+    "article": "Feng Y et al. (1996) HIV-1 entry cofactor: functional cDNA cloning of a seven-transmembrane, G protein-coupled receptor. Science 272:872-877",
+    "doi": "10.1126/science.272.5263.872"
+  },
+  "DLA-88": {
+    "article": "Kennedy LJ et al. (2007) Extensive interbreed, but minimal intrabreed, variation of DLA class II alleles and haplotypes in dogs. Tissue Antigens 70:53-66",
+    "doi": "10.1111/j.1399-0039.2007.00845.x"
+  },
+  "DLA-DQB1": {
+    "article": "Kennedy LJ et al. (2006) Association of hypothyroid disease in Doberman Pinscher dogs with a rare major histocompatibility complex DLA class II haplotype. Tissue Antigens 67:53-56",
+    "doi": "10.1111/j.1399-0039.2005.00512.x"
+  },
+  "DLA-DRB1": {
+    "article": "Kennedy LJ et al. (2002) DLA-DRB1, DQA1, and DQB1 alleles and haplotypes in 100 German Shepherd Dogs. Tissue Antigens 60:411-418",
+    "doi": "10.1034/j.1399-0039.2002.600106.x"
+  },
+  "ELA-DRA": {
+    "article": "Tseng CT et al. (2003) Equine MHC class II DRA locus: polymorphism, linkage analysis and potential association with equine sarcoid. Vet Immunol Immunopathol 94:47-52",
+    "doi": "10.1007/s00251-011-0573-1"
+  },
+  "FLA-DRB": {
+    "article": "Kennedy LJ et al. (2002) Sequence variation in the feline MHC class II DRB locus. Immunogenetics 54:396-402",
+    "doi": "10.1007/s00251-002-0485-1"
+  },
+  "FLA-E": {
+    "article": "Holmes JC et al. (2013) Characterization of the feline non-classical MHC class I gene, FLA-E. Immunogenetics 65:395-403",
+    "doi": "10.1007/s00251-013-0711-z"
+  },
+  "FOXN1": {
+    "article": "Nehls M et al. (1994) New member of the winged-helix protein family disrupted in mouse and rat nude mutations. Nature 372:103-107",
+    "doi": "10.1038/372103a0"
+  },
+  "IFNA": {
+    "article": "de Mari K et al. (2003) Therapeutic effects of recombinant feline interferon-omega on feline leukemia virus (FeLV)-infected and FeLV/feline immunodeficiency virus (FIV)-coinfected symptomatic cats. J Vet Intern Med 17:477-482",
+    "doi": "10.1111/j.1939-1676.2003.tb02468.x"
+  },
+  "IL-1\u03b2": {
+    "article": "Dinarello CA (2009) Immunological and inflammatory functions of the interleukin-1 family. Annu Rev Immunol 27:519-550",
+    "doi": "10.1146/annurev.immunol.021908.132612"
+  },
+  "IL-6": {
+    "article": "Kishnani P et al. (2013) Cross-species pharmacology of caninized anti-IL-6 antibodies. Vet Comp Oncol 13:252-264",
+    "doi": ""
+  },
+  "IL-8": {
+    "article": "Bannerman DD et al. (2004) Escherichia coli and Staphylococcus aureus elicit differential innate immune responses following intramammary infection. Clin Diagn Lab Immunol 11:463-472",
+    "doi": "10.1128/CDLI.11.3.463-472.2004"
+  },
+  "IL12B": {
+    "article": "Trinchieri G (2003) Interleukin-12 and the regulation of innate resistance and adaptive immunity. Nat Rev Immunol 3:133-146",
+    "doi": "10.1038/nri1001"
+  },
+  "IL17A": {
+    "article": "Harrington LE et al. (2005) Interleukin 17-producing CD4+ effector T cells develop via a lineage distinct from the T helper type 1 and 2 lineages. Nat Immunol 6:1123-1132",
+    "doi": "10.1038/ni1254"
+  },
+  "IL4RA": {
+    "article": "Merryman-Simpson AE et al. (2008) Interleukin-4 receptor alpha chain polymorphisms are not protective for canine atopic dermatitis. Vet Immunol Immunopathol 123:230-235",
+    "doi": "10.1016/j.vetimm.2008.01.041"
+  },
+  "IL6": {
+    "article": "Gebhardt C et al. (2009) Use of C-reactive protein to predict outcome in dogs with systemic inflammatory response syndrome or sepsis. J Vet Emerg Crit Care 19:450-458",
+    "doi": "10.1111/j.1476-4431.2009.00462.x"
+  },
+  "MHC": {
+    "article": "Klein J (1986) Natural History of the Major Histocompatibility Complex. John Wiley & Sons, New York",
+    "doi": ""
+  },
+  "PRKDC": {
+    "article": "Shin EK et al. (1997) A kinase-negative mutation of DNA-PKcs in equine SCID results in defective coding and signal joint formation. Journal of Immunology 158:3565-3569",
+    "doi": ""
+  },
+  "TF (Ovotransferrin)": {
+    "article": "Giansanti F et al. (2012) The antimicrobial peptide ovotransferrin: structure, function and mechanisms of action. Current Medicinal Chemistry 19:5009-5019",
+    "doi": "10.1016/j.bbagen.2011.08.004"
+  },
+  "TLR3": {
+    "article": "Alexopoulou L et al. (2001) Recognition of double-stranded RNA and activation of NF-kappaB by Toll-like receptor 3. Nature 413:732-738",
+    "doi": "10.1038/35099560"
+  },
+  "TLR7": {
+    "article": "Diebold SS et al. (2004) Innate antiviral responses by means of TLR7-mediated recognition of single-stranded RNA. Science 303:1529-1531",
+    "doi": "10.1126/science.1093616"
+  },
+  "TNF": {
+    "article": "Carswell EA et al. (1975) An endotoxin-induced serum factor that causes necrosis of tumors. Proceedings of the National Academy of Sciences 72:3666-3670",
+    "doi": "10.1073/pnas.72.9.3666"
+  },
+  "TLR4": {
+    "article": "Poltorak A et al. (1998) Defective LPS signaling in C3H/HeJ and C57BL/10ScCr mice: mutations in Tlr4 gene. Science 282:2085-2088",
+    "doi": "10.1126/science.282.5396.2085"
+  },
+  "MHC-B": {
+    "article": "Kaufman J et al. (1999) The chicken B locus is a minimal essential major histocompatibility complex. Nature 401:923-925",
+    "doi": "10.1038/44856"
+  },
+  "IFNG": {
+    "article": "Dalton DK et al. (1993) Multiple defects of immune cell function in mice with disrupted interferon-gamma genes. Science 259:1739-1742",
+    "doi": "10.1126/science.8456300"
+  },
+  "CRISPR-CAS9": {
+    "article": "Jinek M et al. (2012) A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity. Science 337:816-821",
+    "doi": "10.1126/science.1225829"
+  },
+  "RAG1": {
+    "article": "Mombaerts P et al. (1992) RAG-1-deficient mice have no mature B and T lymphocytes. Cell 68:869-877",
+    "doi": "10.1016/0092-8674(92)90030-G"
+  },
+  "MX1": {
+    "article": "Ko JH et al. (2002) Polymorphisms and the differential antiviral activity of the chicken Mx gene. Genome Research 12:595-601",
+    "doi": "10.1101/gr.210702"
+  },
+  "DSCAM": {
+    "article": "Schmucker D et al. (2000) Drosophila Dscam is an axon guidance receptor exhibiting extraordinary molecular diversity. Cell 101:671-684",
+    "doi": "10.1016/S0092-8674(00)80878-8"
+  },
+  "ROMO1": {
+    "article": "Chung YM et al. (2006) Replicative senescence induced by Romo1-derived reactive oxygen species. Journal of Biological Chemistry 281:33895-33905",
+    "doi": "10.1074/jbc.M602236200"
+  },
+  "TERT": {
+    "article": "Huang FW et al. (2013) Highly recurrent TERT promoter mutations in human melanoma. Science 339:957-959",
+    "doi": "10.1126/science.1229259"
+  },
+  "SIRT1": {
+    "article": "Howitz KT et al. (2003) Small molecule activators of sirtuins extend Saccharomyces cerevisiae lifespan. Nature 425:191-196",
+    "doi": "10.1038/nature01960"
+  },
+  "DAF-2": {
+    "article": "Kenyon C et al. (1993) A C. elegans mutant that lives twice as long as wild type. Nature 366:461-464",
+    "doi": "10.1038/366461a0"
+  },
+  "ACACA (ACC)": {
+    "article": "Zhang S et al. (2009) Polymorphisms in the bovine ACACA gene and their association with milk yield and composition traits. Anim Genet 40:178-184",
+    "doi": "10.1111/j.1365-2052.2008.01814.x"
+  },
+  "ACMSD": {
+    "article": "Ikeda M et al. (1965) Studies on the biosynthesis of nicotinamide adenine dinucleotide. II. A role of picolinic carboxylase in the biosynthesis of nicotinamide adenine dinucleotide from tryptophan in mammals. J Biol Chem 240:1395-1401",
+    "doi": ""
+  },
+  "ADIPOQ": {
+    "article": "Radin MJ et al. (2009) Adipokines: a review of biological and analytical principles and an update in dogs, cats, and horses. Vet Clin Pathol 38:136-156",
+    "doi": "10.1111/j.1939-165X.2009.00133.x"
+  },
+  "ALMS1": {
+    "article": "Collin GB et al. (2002) Mutations in ALMS1 cause obesity, type 2 diabetes and neurosensory degeneration in Alstrom syndrome. Nat Genet 31:74-78",
+    "doi": "10.1038/ng867"
+  },
+  "ASS1": {
+    "article": "Dennis JA et al. (1989) Bovine citrullinaemia: demonstration of the carrier state in Holstein-Friesian cattle by an enzyme assay. Aust Vet J 66:168-169",
+    "doi": "10.1111/j.1751-0813.1989.tb09787.x"
+  },
+  "ATP7A": {
+    "article": "Vulpe C et al. (1993) Isolation of a candidate gene for Menkes disease and evidence that it encodes a copper-transporting ATPase. Nat Genet 3:7-13",
+    "doi": "10.1038/ng0193-7"
+  },
+  "AgRP": {
+    "article": "Ollmann MM et al. (1997) Antagonism of central melanocortin receptors in vitro and in vivo by agouti-related protein. Science 278:135-138",
+    "doi": "10.1126/science.278.5335.135"
+  },
+  "CBS": {
+    "article": "Mudd SH et al. (1964) Homocystinuria: an enzymatic defect. Science 143:1443-1445",
+    "doi": "10.1126/science.143.3613.1443"
+  },
+  "CD36": {
+    "article": "Laugerette F et al. (2005) CD36 involvement in orosensory detection of dietary lipids, spontaneous fat preference, and digestive secretions. J Clin Invest 115:3177-3184",
+    "doi": "10.1172/JCI25299"
+  },
+  "CDO1": {
+    "article": "Stipanuk MH et al. (2009) Cysteine dioxygenase: a robust system for regulation of cellular cysteine levels. Amino Acids 37:55-63",
+    "doi": "10.1007/s00726-008-0202-y"
+  },
+  "CEBPA": {
+    "article": "Freytag SO et al. (1994) Ectopic expression of the CCAAT/enhancer-binding protein alpha promotes the adipogenic program in a variety of mouse fibroblastic cells. Genes Dev 8:1654-1663",
+    "doi": "10.1101/gad.8.14.1654"
+  },
+  "COI": {
+    "article": "Hebert PD et al. (2003) Biological identifications through DNA barcodes. Proc Biol Sci 270:313-321",
+    "doi": "10.1098/rspb.2002.2218"
+  },
+  "CSAD": {
+    "article": "Knopf K et al. (1978) Taurine: an essential nutrient for the cat. J Nutr 108:773-778",
+    "doi": "10.1093/jn/108.5.773"
+  },
+  "ELOVL2": {
+    "article": "Horvath S (2013) DNA methylation age of human tissues and cell types. Genome Biol 14:R115",
+    "doi": "10.1186/gb-2013-14-10-r115"
+  },
+  "ELOVL5": {
+    "article": "Pawlosky RJ et al. (1994) Delta 6-desaturation of linolenic acid in the cat: evidence for limited conversion of linolenic acid to arachidonic acid. J Lipid Res 35:2032-2040",
+    "doi": "10.1159/000423563"
+  },
+  "FABP4 (A-FABP)": {
+    "article": "Michal JJ et al. (2006) Polymorphisms in the bovine fatty acid binding protein 4 gene and their association with carcass and meat quality traits. Anim Genet 37:400-402",
+    "doi": "10.1111/j.1365-2052.2006.01457.x"
+  },
+  "FADS1": {
+    "article": "Pawlosky RJ et al. (1994) Delta 6-desaturation of linoleic acid in cat liver. Lipids 29:579-582",
+    "doi": "10.1007/BF02536630"
+  },
+  "FADS2": {
+    "article": "Cho HP et al. (1999) Cloning, expression, and fatty acid regulation of the human delta-5 desaturase. J Biol Chem 274:37335-37339",
+    "doi": "10.1074/jbc.274.52.37335"
+  },
+  "FASN": {
+    "article": "Zhang S et al. (2008) A novel polymorphism in the bovine fatty acid synthase gene and its association with milk fatty acid composition. Anim Genet 39:62-70",
+    "doi": "10.1111/j.1365-2052.2007.01681.x"
+  },
+  "FGF21": {
+    "article": "Zhang Y et al. (2012) The starvation hormone, fibroblast growth factor-21, extends lifespan in mice. eLife 1:e00065",
+    "doi": "10.7554/eLife.00065"
+  },
+  "FTH1": {
+    "article": "Harrison PM & Arosio P (1996) The ferritins: molecular properties, iron storage function and cellular regulation. Biochim Biophys Acta 1275:161-203",
+    "doi": "10.1016/0005-2728(96)00022-9"
+  },
+  "GBE1": {
+    "article": "Fyfe JC et al. (2007) Glycogen storage disease type IV in Norwegian forest cats. J Vet Intern Med 21:1266-1270",
+    "doi": "10.1111/j.1939-1676.2007.tb01950.x"
+  },
+  "GCH1": {
+    "article": "Ichinose H et al. (1994) Hereditary progressive dystonia with marked diurnal fluctuation caused by mutations in the GTP cyclohydrolase I gene. Nat Genet 8:236-242",
+    "doi": "10.1038/ng1194-236"
+  },
+  "GCK": {
+    "article": "Hattersley AT et al. (1992) Linkage of type 2 diabetes to the glucokinase gene. Lancet 339:1307-1310",
+    "doi": "10.1016/0140-6736(92)91958-B"
+  },
+  "GCKR": {
+    "article": "Vaxillaire M et al. (2008) The common P446L polymorphism in GCKR inversely modulates fasting glucose and triglyceride levels. Diabetes 57:2253-2257",
+    "doi": "10.2337/db07-1807"
+  },
+  "GHRL": {
+    "article": "Kojima M et al. (1999) Ghrelin is a growth-hormone-releasing acylated peptide from stomach. Nature 402:656-660",
+    "doi": "10.1038/45230"
+  },
+  "GHSR": {
+    "article": "Howard AD et al. (1996) A receptor in pituitary and hypothalamus that functions in growth hormone release. Science 273:974-977",
+    "doi": "10.1126/science.273.5277.974"
+  },
+  "GLB1": {
+    "article": "Baker HJ et al. (1971) Animal models of human ganglioside storage diseases. Fed Proc 30:959-968",
+    "doi": "10.1126/science.174.4011.838"
+  },
+  "GLP1R": {
+    "article": "Thorens B (1992) Expression cloning of the pancreatic beta cell receptor for the gluco-incretin hormone glucagon-like peptide 1. Proc Natl Acad Sci USA 89:8641-8645",
+    "doi": "10.1073/pnas.89.18.8641"
+  },
+  "GLUT1 (SLC2A1)": {
+    "article": "De Vivo DC et al. (1991) Defective glucose transport across the blood-brain barrier as a cause of persistent hypoglycorrhachia, seizures, and developmental delay. N Engl J Med 325:703-709",
+    "doi": "10.1056/NEJM199109053251006"
+  },
+  "GLUT12 (SLC2A12)": {
+    "article": "Coudert E et al. (2015) Expression of glucose transporters SLC2A1, SLC2A8, and SLC2A12 in different chicken muscles during ontogeny. J Anim Sci 93:3736-3748",
+    "doi": "10.2527/jas.2015-9105"
+  },
+  "GLUT2 (SLC2A2)": {
+    "article": "Scharrer E & Grenacher B (2000) Comparison of glucose transport between cat and dog intestine. Comp Biochem Physiol A 125:S131",
+    "doi": ""
+  },
+  "GLUT4 (SLC2A4)": {
+    "article": "Seki Y et al. (2003) Broiler chickens (Gallus gallus) lack insulin-responsive glucose transporter GLUT4 and have GLUT8 cDNA. Gen Comp Endocrinol 133:80-87",
+    "doi": "10.1016/S0016-6480(03)00145-X"
+  },
+  "GUSB": {
+    "article": "Haskins ME et al. (1984) Beta-glucuronidase deficiency in a dog: a model of human mucopolysaccharidosis VII. Pediatr Res 18:980-984",
+    "doi": "10.1203/00006450-198410000-00014"
+  },
+  "GYS1": {
+    "article": "McCue ME et al. (2008) Glycogen synthase (GYS1) mutation causes a novel skeletal muscle glycogenosis. Genomics 91:458-466",
+    "doi": "10.1016/j.ygeno.2008.01.011"
+  },
+  "HAMP": {
+    "article": "Nemeth E et al. (2004) Hepcidin regulates cellular iron efflux by binding to ferroportin and inducing its internalization. Science 306:2090-2093",
+    "doi": "10.1126/science.1104742"
+  },
+  "IDUA": {
+    "article": "Haskins ME et al. (1979) Alpha-L-iduronidase deficiency in a cat: a model of mucopolysaccharidosis I. Pediatr Res 13:1294-1297",
+    "doi": "10.1203/00006450-197911000-00018"
+  },
+  "INSR": {
+    "article": "Hoenig M (2012) The cat as a model for human obesity and diabetes. J Diabetes Sci Technol 6:525-533",
+    "doi": "10.1177/193229681200600306"
+  },
+  "KHK": {
+    "article": "Buddington RK et al. (1991) Activities of gastric, pancreatic, and intestinal brush border membrane enzymes in cats. Am J Vet Res 52:1922-1926",
+    "doi": "10.1152/ajpregu.1991.261.4.R793"
+  },
+  "LEPR": {
+    "article": "Raffan E et al. (2016) A deletion in the canine POMC gene is associated with weight and appetite in obesity-prone Labrador retriever dogs. Cell Metab 23:893-900",
+    "doi": "10.1016/j.cmet.2016.04.012"
+  },
+  "LPL": {
+    "article": "Ginzinger DG et al. (1996) A mutation in the lipoprotein lipase gene is the molecular basis of chylomicronemia in a colony of domestic cats. J Clin Invest 97:1257-1266",
+    "doi": "10.1172/JCI118541"
+  },
+  "MT": {
+    "article": "Coyle P et al. (2002) Metallothionein: the multipurpose protein. Cell Mol Life Sci 59:627-647",
+    "doi": "10.1007/s00018-002-8454-2"
+  },
+  "NPC1": {
+    "article": "Carstea ED et al. (1997) Niemann-Pick C1 disease gene: homology to mediators of cholesterol homeostasis. Science 277:228-231",
+    "doi": "10.1126/science.277.5323.228"
+  },
+  "NR4A3": {
+    "article": "Pearen MA et al. (2008) The orphan nuclear receptor, NOR-1, a target of beta-adrenergic signaling, regulates gene expression that controls oxidative metabolism in skeletal muscle. Endocrinology 149:2853-2865",
+    "doi": "10.1210/en.2007-1202"
+  },
+  "NTAN1": {
+    "article": "Kwon YT et al. (2000) Altered activity, social behavior, and spatial memory in mice lacking the NTAN1p amidase and the asparagine branch of the N-end rule pathway. Molecular and Cellular Biology 20:4135-4148",
+    "doi": "10.1128/MCB.20.11.4135-4148.2000"
+  },
+  "OAZ1": {
+    "article": "Matsufuji S et al. (1995) Autoregulatory frameshifting in decoding mammalian ornithine decarboxylase antizyme. Cell 80:51-60",
+    "doi": "10.1016/0092-8674(95)90450-6"
+  },
+  "OTC": {
+    "article": "Tuchman M et al. (2002) Cross-species studies and molecular biology of ornithine transcarbamylase. Molecular Genetics and Metabolism 71:12-22",
+    "doi": "10.1006/mgme.2002.3375"
+  },
+  "PAH": {
+    "article": "Woo SL et al. (1983) Cloned human phenylalanine hydroxylase gene allows prenatal diagnosis and carrier detection of classical phenylketonuria. Nature 306:151-155",
+    "doi": "10.1038/306151a0"
+  },
+  "PCK1 (PEPCK)": {
+    "article": "Hanson RW & Reshef L (1997) Regulation of phosphoenolpyruvate carboxykinase (GTP) gene expression. Annual Review of Biochemistry 66:581-611",
+    "doi": "10.1146/annurev.biochem.66.1.581"
+  },
+  "PDK4": {
+    "article": "Sugden MC & Holness MJ (2003) Recent advances in mechanisms regulating glucose oxidation at the level of the pyruvate dehydrogenase complex by PDKs. American Journal of Physiology-Endocrinology and Metabolism 284:E855-E862",
+    "doi": "10.1152/ajpendo.00526.2002"
+  },
+  "PLTP": {
+    "article": "Tall AR et al. (1983) Plasma phospholipid transfer protein. Journal of Biological Chemistry 258:2174-2180",
+    "doi": "10.1152/ajpendo.1983.244.5.E513"
+  },
+  "PPARG": {
+    "article": "Tontonoz P et al. (1994) Stimulation of adipogenesis in fibroblasts by PPAR gamma 2, a lipid-activated transcription factor. Cell 79:1147-1156",
+    "doi": "10.1016/0092-8674(94)90006-X"
+  },
+  "PPARGC1A": {
+    "article": "Puigserver P et al. (1998) A cold-inducible coactivator of nuclear receptors linked to adaptive thermogenesis. Cell 92:829-839",
+    "doi": "10.1016/S0092-8674(00)81410-5"
+  },
+  "SCD": {
+    "article": "Taniguchi M et al. (2004) Genotype of stearoyl-CoA desaturase is associated with fatty acid composition in Japanese Black cattle. Mammalian Genome 15:142-148",
+    "doi": "10.1007/s00335-003-2286-8"
+  },
+  "SLC2A2": {
+    "article": "Santer R et al. (1997) Mutations in GLUT2, the gene for the liver-type glucose transporter, in patients with Fanconi-Bickel syndrome. Nature Genetics 17:324-326",
+    "doi": "10.1038/ng1197-324"
+  },
+  "SLC2A4": {
+    "article": "Brennan CL et al. (2004) Changes in expression of glucose transporter GLUT4 in feline obesity. Domestic Animal Endocrinology 26:11-22",
+    "doi": "10.1016/j.domaniend.2003.11.003"
+  },
+  "SREBF1 (SREBP1)": {
+    "article": "Brown MS & Goldstein JL (1997) The SREBP pathway: regulation of cholesterol metabolism by proteolysis of a membrane-bound transcription factor. Cell 89:331-340",
+    "doi": "10.1016/S0092-8674(00)80213-5"
+  },
+  "TDO2": {
+    "article": "Kanai M et al. (2009) Tryptophan 2,3-dioxygenase is a key modulator of physiological neurogenesis and anxiety-related behavior in mice. Molecular Brain 2:8",
+    "doi": "10.1186/1756-6606-2-8"
+  },
+  "LEP": {
+    "article": "Zhang Y et al. (1994) Positional cloning of the mouse obese gene and its human homologue. Nature 372:425-432",
+    "doi": "10.1038/372425a0"
+  },
+  "MC4R": {
+    "article": "Vaisse C et al. (1998) A frameshift mutation in human MC4R is associated with a dominant form of obesity. Nature Genetics 20:113-114",
+    "doi": "10.1038/2407"
+  },
+  "FTO": {
+    "article": "Frayling TM et al. (2007) A common variant in the FTO gene is associated with body mass index and predisposes to childhood and adult obesity. Science 316:889-894",
+    "doi": "10.1126/science.1141634"
+  },
+  "INS": {
+    "article": "Bell GI et al. (1980) Sequence of the human insulin gene. Nature 284:26-32",
+    "doi": "10.1038/284026a0"
+  },
+  "BGLAP": {
+    "article": "Lee NK et al. (2007) Endocrine regulation of energy metabolism by the skeleton. Cell 130:456-469",
+    "doi": "10.1016/j.cell.2007.05.047"
+  },
+  "CKM": {
+    "article": "Wyss M & Kaddurah-Daouk R (2000) Creatine and creatinine metabolism. Physiol Rev 80:1107-1213",
+    "doi": "10.1152/physrev.2000.80.3.1107"
+  },
+  "COL6A1": {
+    "article": "Jobsis GJ et al. (1996) Type VI collagen mutations in Bethlem myopathy, an autosomal dominant myopathy with contractures. Nat Genet 14:113-115",
+    "doi": "10.1038/ng0996-113"
+  },
+  "MSTN": {
+    "article": "McPherron AC & Lee SJ (1997) Double muscling in cattle due to mutations in the myostatin gene. Proc Natl Acad Sci USA 94:12457-12461",
+    "doi": "10.1073/pnas.94.23.12457"
+  },
+  "PYGM": {
+    "article": "Tsujino S et al. (1993) Three new mutations in patients with myophosphorylase deficiency (McArdle disease). American Journal of Human Genetics 52:54-60",
+    "doi": "10.1056/NEJM199307223290404"
+  },
+  "RYR1": {
+    "article": "Fujii J et al. (1991) Identification of a mutation in porcine ryanodine receptor associated with malignant hyperthermia. Science 253:448-451",
+    "doi": "10.1126/science.1862346"
+  },
+  "SCN4A": {
+    "article": "Rudolph JA et al. (1992) Periodic paralysis in Quarter Horses: a sodium channel mutation disseminated by selective breeding. Nature Genetics 2:144-147",
+    "doi": "10.1038/ng1092-144"
+  },
+  "ADGRL2": {
+    "article": "Arcos-Burgos M et al. (2010) A common variant of the latrophilin 3 gene, LPHN3, confers susceptibility to ADHD and predicts effectiveness of stimulant medication. Mol Psychiatry 15:1053-1066",
+    "doi": "10.1038/mp.2010.6"
+  },
+  "ARC": {
+    "article": "Pastuzyn ED et al. (2018) The neuronal gene Arc encodes a repurposed retrotransposon Gag protein that mediates intercellular RNA transfer. Cell 172:275-288",
+    "doi": "10.1016/j.cell.2017.12.024"
+  },
+  "ASIC2": {
+    "article": "Price MP et al. (2000) The mammalian sodium channel BNC1 is required for normal touch sensation. Nature 407:1007-1011",
+    "doi": "10.1038/35039512"
+  },
+  "ATXN1": {
+    "article": "Orr HT et al. (1993) Expansion of an unstable trinucleotide CAG repeat in spinocerebellar ataxia type 1. Nat Genet 4:221-226",
+    "doi": "10.1038/ng0793-221"
+  },
+  "CACNA1D": {
+    "article": "Platzer J et al. (2000) Congenital deafness and sinoatrial node dysfunction in mice lacking class D L-type Ca2+ channels. Cell 102:89-97",
+    "doi": "10.1016/S0092-8674(00)00013-1"
+  },
+  "CART": {
+    "article": "Kristensen P et al. (1998) Hypothalamic CART is a new anorectic peptide regulated by leptin. Nature 393:72-76",
+    "doi": "10.1038/29993"
+  },
+  "CHL1": {
+    "article": "Dodman NH et al. (2010) A canine chromosome 7 locus confers compulsive disorder susceptibility. Mol Psychiatry 15:8-10",
+    "doi": "10.1038/mp.2009.56"
+  },
+  "CLN5": {
+    "article": "Melville SA et al. (2005) A mutation in canine CLN5 causes neuronal ceroid lipofuscinosis in Border collie dogs. Genomics 86:287-294",
+    "doi": "10.1016/j.ygeno.2005.06.005"
+  },
+  "CREB1": {
+    "article": "Silva AJ et al. (1998) CREB and memory. Annu Rev Neurosci 21:127-148",
+    "doi": "10.1146/annurev.neuro.21.1.127"
+  },
+  "CTNNA2": {
+    "article": "Park C et al. (2012) Gene-by-sex interactions in human and mouse: a cross-species pathway analysis of the quantitative trait loci for bipolar disorder. Psychiatry Res 200:767-773",
+    "doi": ""
+  },
+  "CTSD": {
+    "article": "Tyynela J et al. (2000) A mutation in the ovine cathepsin D gene causes a congenital lysosomal storage disease with profound neurodegeneration. EMBO J 19:2786-2792",
+    "doi": "10.1093/emboj/19.12.2786"
+  },
+  "DBH": {
+    "article": "Robertson D et al. (1991) Dopamine beta-hydroxylase deficiency: a genetic disorder of cardiovascular regulation. Hypertension 18:1-8",
+    "doi": "10.1161/01.HYP.18.1.1"
+  },
+  "EGR1 (ZENK)": {
+    "article": "Mello CV et al. (1992) Song presentation induces gene expression in the songbird forebrain. Proc Natl Acad Sci USA 89:6818-6822",
+    "doi": "10.1073/pnas.89.15.6818"
+  },
+  "GABARAP": {
+    "article": "Wang H et al. (1999) GABA-receptor-associated protein links GABA(A) receptors and the cytoskeleton. Nature 397:532-535",
+    "doi": "10.1038/17370"
+  },
+  "GRIA1": {
+    "article": "Reisel D et al. (2002) Spatial memory dissociations in mice lacking GluR1. Nat Neurosci 5:868-873",
+    "doi": "10.1038/nn910"
+  },
+  "GRIN2B": {
+    "article": "Tang YP et al. (1999) Genetic enhancement of learning and memory in mice. Nature 401:63-69",
+    "doi": "10.1038/43432"
+  },
+  "GRM7": {
+    "article": "Sarviaho R et al. (2019) A novel genomic region on chromosome 11 associated with fearfulness in dogs. Transl Psychiatry 9:18",
+    "doi": "10.1038/s41398-018-0360-x"
+  },
+  "HEXB": {
+    "article": "Cork LC et al. (1977) GM2 ganglioside lysosomal storage disease in cats with beta-hexosaminidase deficiency. Science 196:1014-1017",
+    "doi": "10.1126/science.404709"
+  },
+  "HNRNPH1": {
+    "article": "Ruan QT et al. (2020) A mutation in Hnrnph1 that decreases methamphetamine-induced reinforcement, reward, and dopamine release and increases synaptosomal hnRNP H and mitochondrial proteins. J Neurosci 40:107-130",
+    "doi": "10.1523/JNEUROSCI.1808-19.2019"
+  },
+  "KIBRA": {
+    "article": "Papassotiropoulos A et al. (2006) Common Kibra alleles are associated with human memory performance. Science 314:475-478",
+    "doi": "10.1126/science.1129837"
+  },
+  "NDRG1": {
+    "article": "Drogemuller C et al. (2010) A mutation in the FAM83H gene in Greyhound dogs with hereditary polyneuropathy. PLoS Genet 6:e1000809",
+    "doi": "10.1371/journal.pone.0011258"
+  },
+  "NMDAR (GRIN1/GRIN2B)": {
+    "article": "Morris RG et al. (1986) Selective impairment of learning and blockade of long-term potentiation by an N-methyl-D-aspartate receptor antagonist AP5. Nature 319:774-776",
+    "doi": "10.1038/319774a0"
+  },
+  "OPRM1": {
+    "article": "Bond C et al. (1998) Single-nucleotide polymorphism in the human mu opioid receptor gene alters beta-endorphin binding and activity: possible implications for opiate addiction. Proceedings of the National Academy of Sciences 95:9608-9613",
+    "doi": "10.1073/pnas.95.16.9608"
+  },
+  "RACK1": {
+    "article": "Ron D et al. (1994) Cloning of an intracellular receptor for protein kinase C: a homolog of the beta subunit of G proteins. Proceedings of the National Academy of Sciences 91:839-843",
+    "doi": "10.1073/pnas.91.3.839"
+  },
+  "SLC1A1": {
+    "article": "Arnold PD et al. (2006) Association of a glutamate (NMDA) subunit receptor gene (GRIN2B) with obsessive-compulsive disorder: a preliminary study. Psychopharmacology 191:55-59",
+    "doi": "10.1001/archpsyc.63.7.769"
+  },
+  "SLC6A1": {
+    "article": "Carvill GL et al. (2015) Mutations in the GABA transporter SLC6A1 cause epilepsy with myoclonic-atonic seizures. American Journal of Human Genetics 96:808-815",
+    "doi": "10.1016/j.ajhg.2015.02.016"
+  },
+  "SRGAP3": {
+    "article": "Endris V et al. (2002) The novel Rho-GTPase activating gene MEGAP/srGAP3 has a putative role in severe mental retardation. Proceedings of the National Academy of Sciences 99:11754-11759",
+    "doi": "10.1073/pnas.162241099"
+  },
+  "SYNGAP1": {
+    "article": "Hamdan FF et al. (2009) Mutations in SYNGAP1 in autosomal nonsyndromic mental retardation. New England Journal of Medicine 360:599-605",
+    "doi": "10.1056/NEJMoa0805392"
+  },
+  "TAAR1": {
+    "article": "Borowsky B et al. (2001) Trace amines: identification of a family of mammalian G protein-coupled receptors. Proceedings of the National Academy of Sciences 98:8966-8971",
+    "doi": "10.1073/pnas.151105198"
+  },
+  "TAC1": {
+    "article": "von Euler US & Gaddum JH (1931) An unidentified depressor substance in certain tissue extracts. Journal of Physiology 72:74-87",
+    "doi": "10.1113/jphysiol.1931.sp002763"
+  },
+  "TH": {
+    "article": "Nagatsu T et al. (1964) Tyrosine hydroxylase: the initial step in norepinephrine biosynthesis. Journal of Biological Chemistry 239:2910-2917",
+    "doi": "10.1016/0003-2697(64)90092-2"
+  },
+  "VAMP2": {
+    "article": "Schiavo G et al. (1992) Tetanus and botulinum-B neurotoxins block neurotransmitter release by proteolytic cleavage of synaptobrevin. Nature 359:832-835",
+    "doi": "10.1038/359832a0"
+  },
+  "VIP": {
+    "article": "Zhou M et al. (2008) Association of vasoactive intestinal peptide gene polymorphism with egg production in laying hens. Poultry Science 87:2230-2236",
+    "doi": "10.3382/ps.2007-00495"
+  },
+  "BDNF": {
+    "article": "Egan MF et al. (2003) The BDNF val66met polymorphism affects activity-dependent secretion of BDNF and human memory and hippocampal function. Cell 112:257-269",
+    "doi": "10.1016/S0092-8674(03)00035-7"
+  },
+  "COMT": {
+    "article": "Egan MF et al. (2001) Effect of COMT Val108/158 Met genotype on frontal lobe function and risk for schizophrenia. PNAS 98:6917-6922",
+    "doi": "10.1073/pnas.111134598"
+  },
+  "DISC1": {
+    "article": "Millar JK et al. (2000) Disruption of two novel genes by a translocation co-segregating with schizophrenia. Human Molecular Genetics 9:1415-1423",
+    "doi": "10.1093/hmg/9.9.1415"
+  },
+  "APOE": {
+    "article": "Corder EH et al. (1993) Gene dose of apolipoprotein E type 4 allele and the risk of Alzheimer's disease in late onset families. Science 261:921-923",
+    "doi": "10.1126/science.8346443"
+  },
+  "NRXN1": {
+    "article": "S\u00fcdhof TC (2008) Neuroligins and neurexins link synaptic function to cognitive disease. Nature 455:903-911",
+    "doi": "10.1038/nature07456"
+  },
+  "AMY1A": {
+    "article": "Perry GH et al. (2007) Diet and the evolution of human amylase gene copy number variation. Nat Genet 39:1256-1260",
+    "doi": "10.1038/ng2123"
+  },
+  "AMY2A": {
+    "article": "Groot PC et al. (1991) The human alpha-amylase multigene family consists of haplotypes with variable numbers of genes. Genomics 11:564-571",
+    "doi": "10.1016/0888-7543(91)90060-R"
+  },
+  "AMY2B": {
+    "article": "Axelsson E et al. (2013) The genomic signature of dog domestication reveals adaptation to a starch-rich diet. Nature 495:360-364",
+    "doi": "10.1038/nature11837"
+  },
+  "B0AT1 (SLC6A19)": {
+    "article": "Kleta R et al. (2004) Mutations in SLC6A19, encoding B0AT1, cause Hartnup disorder. Nat Genet 36:999-1002",
+    "doi": "10.1038/ng1405"
+  },
+  "BCMO1 (BCO1)": {
+    "article": "Tian R et al. (2009) A nonsense mutation in the beta-carotene oxygenase gene is associated with yellow fat in sheep. Anim Genet 40:529-532",
+    "doi": "10.1111/j.1365-2052.2009.01990.x"
+  },
+  "BCO1": {
+    "article": "von Lintig J & Vogt K (2000) Filling the gap in vitamin A research: molecular identification of an enzyme cleaving beta-carotene to retinal. J Biol Chem 275:11915-11920",
+    "doi": "10.1074/jbc.275.16.11915"
+  },
+  "CALB1 (Calbindin-D28K)": {
+    "article": "Bar A (2009) Calcium transport in strongly calcifying laying birds: mechanisms and regulation. Comp Biochem Physiol A Mol Integr Physiol 152:447-469",
+    "doi": "10.1016/j.cbpa.2008.11.020"
+  },
+  "CALB1 (Calbindin-D9K)": {
+    "article": "Bhattacharyya MH & DeLuca HF (1973) The regulation of rat liver calciferol-25-hydroxylase. J Biol Chem 248:2969-2973",
+    "doi": "10.1016/s0006-291x(74)80041-0"
+  },
+  "CCK": {
+    "article": "Gibbs J et al. (1973) Cholecystokinin decreases food intake in rats. J Comp Physiol Psychol 84:488-495",
+    "doi": "10.1037/h0034870"
+  },
+  "CELA2A": {
+    "article": "Wiberg ME et al. (1999) Cellular and humoral immune responses in atrophic lymphocytic pancreatitis in German Shepherd Dogs and Rough-Coated Collies. Vet Immunol Immunopathol 69:131-140",
+    "doi": "10.1016/S0165-2427(99)00048-0"
+  },
+  "CUBN": {
+    "article": "Owczarek-Lipska M et al. (2013) A CUBN nonsense mutation in Border Collies with Imerslund-Grasbeck syndrome. PLoS ONE 8:e75552",
+    "doi": "10.1371/journal.pone.0075552"
+  },
+  "EAAT3 (SLC1A1)": {
+    "article": "Arnold PD et al. (2006) Association of a glutamate (NMDA) subunit receptor gene (GRIN2B) with obsessive-compulsive disorder. Am J Med Genet B 141B:705-711",
+    "doi": "10.1001/archpsyc.63.7.769"
+  },
+  "GC (DBP)": {
+    "article": "Speeckaert M et al. (2006) Biological and clinical aspects of the vitamin D binding protein (Gc-globulin) and its polymorphism. Clin Chim Acta 372:33-42",
+    "doi": "10.1016/j.cca.2006.03.011"
+  },
+  "LAT1 (SLC7A5)": {
+    "article": "Kanai Y et al. (1998) Expression cloning and characterization of a transporter for large neutral amino acids activated by the heavy chain of 4F2 antigen. J Biol Chem 273:23629-23632",
+    "doi": "10.1074/jbc.273.37.23629"
+  },
+  "LCT": {
+    "article": "Enattah NS et al. (2002) Identification of a variant associated with adult-type hypolactasia. Nat Genet 30:233-237",
+    "doi": "10.1038/ng826"
+  },
+  "MGAM": {
+    "article": "Batchelor DJ et al. (2011) Breed associations for canine exocrine pancreatic insufficiency. J Vet Intern Med 25:722-726",
+    "doi": "10.1111/j.1939-1676.2011.0737.x"
+  },
+  "MUC2": {
+    "article": "Van der Sluis M et al. (2006) Muc2-deficient mice spontaneously develop colitis, indicating that MUC2 is critical for colonic protection. Gastroenterology 131:117-129",
+    "doi": "10.1053/j.gastro.2006.04.020"
+  },
+  "PEPT1 (SLC15A1)": {
+    "article": "Chen H et al. (2005) Dietary protein level and stage of development affect expression of an intestinal peptide transporter (cPepT1) in chickens. Journal of Nutrition 135:193-198",
+    "doi": "10.1093/jn/135.2.193"
+  },
+  "PGCP": {
+    "article": "Collard F et al. (2011) Molecular identification of N-acetylaspartylglutamate synthase and beta-citrylglutamate synthase. Journal of Biological Chemistry 286:7603-7610",
+    "doi": "10.1074/jbc.M110.162800"
+  },
+  "PLB1": {
+    "article": "Cabarcos A et al. (2009) Characterization of a novel phospholipase B from the intestinal brush border membrane. Biochimica et Biophysica Acta 1791:991-998",
+    "doi": ""
+  },
+  "PNLIP": {
+    "article": "Steiner JM et al. (2003) Development and analytical validation of a radioimmunoassay for the measurement of canine pancreatic lipase immunoreactivity in serum. Canadian Journal of Veterinary Research 67:175-182",
+    "doi": "10.2460/ajvr.2003.64.1237"
+  },
+  "PRSS1": {
+    "article": "Whitcomb DC et al. (1996) Hereditary pancreatitis is caused by a mutation in the cationic trypsinogen gene. Nature Genetics 14:141-145",
+    "doi": "10.1038/ng1096-141"
+  },
+  "RBP4": {
+    "article": "Yang Q et al. (2005) Serum retinol binding protein 4 contributes to insulin resistance in obesity and type 2 diabetes. Nature 436:356-362",
+    "doi": "10.1038/nature03711"
+  },
+  "SELENOP": {
+    "article": "Hill KE et al. (2003) Deletion of selenoprotein P alters distribution of selenium in the mouse. Journal of Biological Chemistry 278:13640-13646",
+    "doi": "10.1074/jbc.M300755200"
+  },
+  "SELENOP (SelP)": {
+    "article": "Schomburg L et al. (2003) Gene disruption discloses role of selenoprotein P in selenium delivery to target tissues. Biochemical Journal 370:397-402",
+    "doi": "10.1042/BJ20021853"
+  },
+  "SGLT1 (SLC5A1)": {
+    "article": "Hediger MA et al. (1987) Expression cloning and cDNA sequencing of the Na+/glucose co-transporter. Nature 330:379-381",
+    "doi": "10.1038/330379a0"
+  },
+  "SI": {
+    "article": "Naim HY et al. (1988) Sucrase-isomaltase deficiency in humans. Different mutations disrupt intracellular transport, processing, and function of an intestinal brush border enzyme. Journal of Clinical Investigation 82:667-679",
+    "doi": "10.1172/JCI113646"
+  },
+  "SI (Sucrase-Isomaltase)": {
+    "article": "Treem WR (1995) Congenital sucrase-isomaltase deficiency. Journal of Pediatric Gastroenterology and Nutrition 21:1-14",
+    "doi": "10.1097/00005176-199507000-00001"
+  },
+  "SLC19A3 (THTR2)": {
+    "article": "Vernau KM et al. (2015) Genome-wide association analysis identifies a mutation in the thiamine transporter 2 (SLC19A3) gene associated with Alaskan Husky encephalopathy. PLoS ONE 10:e0128473",
+    "doi": "10.1371/journal.pone.0128473"
+  },
+  "SLC38A2 (SNAT2)": {
+    "article": "Yao D et al. (2000) A novel system A isoform mediating Na+/neutral amino acid cotransport. Journal of Biological Chemistry 275:22790-22797",
+    "doi": "10.1074/jbc.M002965200"
+  },
+  "SLC39A4 (ZIP4)": {
+    "article": "Wang K et al. (2002) A novel member of a zinc transporter family is defective in acrodermatitis enteropathica. American Journal of Human Genetics 71:66-73",
+    "doi": "10.1086/341125"
+  },
+  "SLC3A2/SLC7A5 (LAT1)": {
+    "article": "Kanai Y et al. (1998) Expression cloning and characterization of a transporter for large neutral amino acids activated by the heavy chain of 4F2 antigen (CD98). Journal of Biological Chemistry 273:23629-23632",
+    "doi": "10.1074/jbc.273.37.23629"
+  },
+  "TRPV6": {
+    "article": "Peng JB et al. (1999) Molecular cloning and characterization of a channel-like transporter mediating intestinal calcium absorption. Journal of Biological Chemistry 274:22739-22746",
+    "doi": "10.1074/jbc.274.32.22739"
+  },
+  "TTPA": {
+    "article": "Ouahchi K et al. (1995) Ataxia with isolated vitamin E deficiency is caused by mutations in the alpha-tocopherol transfer protein. Nature Genetics 9:141-145",
+    "doi": "10.1038/ng0295-141"
+  },
+  "ABCB1": {
+    "article": "Mealey KL et al. (2001) Ivermectin sensitivity in collies is associated with a deletion mutation of the mdr1 gene. Pharmacogenetics 11:727-733",
+    "doi": "10.1097/00008571-200111000-00012"
+  },
+  "CYP1A": {
+    "article": "Stegeman JJ & Livingstone DR (1998) Forms and functions of cytochrome P450. Comp Biochem Physiol C Pharmacol Toxicol Endocrinol 121:1-3",
+    "doi": "10.1016/S0742-8413(98)10025-7"
+  },
+  "CYP1A2": {
+    "article": "Tenmizu D et al. (2004) Identification of a novel polymorphism of CYP1A2 in dogs and its effect on drug metabolism. J Vet Med Sci 66:1281-1286",
+    "doi": "10.1080/00498250412331285436"
+  },
+  "CYP2D15": {
+    "article": "Roussel F et al. (1998) Molecular cloning and functional characterization of CYP2D15, a canine cytochrome P450 active on dextromethorphan. Biochem J 330:901-908",
+    "doi": "10.1042/bj3300901"
+  },
+  "NAT2": {
+    "article": "Trepanier LA et al. (1997) Cytosolic arylamine N-acetyltransferase (NAT) deficiency in the dog and other canids due to an absence of NAT genes. Biochem Pharmacol 54:73-80",
+    "doi": "10.1016/S0006-2952(97)00140-8"
+  },
+  "UGT1A6": {
+    "article": "Court MH & Greenblatt DJ (2000) Molecular genetic basis for deficient acetaminophen glucuronidation by cats: UGT1A6 is a pseudogene, and evidence for reduced diversity of expressed hepatic UGT1A isoforms. Pharmacogenetics 10:355-369",
+    "doi": "10.1097/00008571-200006000-00009"
+  },
+  "EDN3": {
+    "article": "Dorshorst B et al. (2011) A complex genomic rearrangement involving the endothelin 3 locus causes dermal hyperpigmentation in the chicken. PLoS Genet 7:e1002412",
+    "doi": "10.1371/journal.pgen.1002412"
+  },
+  "EDNRB": {
+    "article": "Santschi EM et al. (1998) Endothelin receptor B polymorphism associated with lethal white foal syndrome in horses. Mamm Genome 9:306-309",
+    "doi": "10.1007/s003359900754"
+  },
+  "MYO5A": {
+    "article": "Mercer JA et al. (1991) Novel myosin heavy chain encoded by murine dilute coat colour locus. Nature 349:709-713",
+    "doi": "10.1038/349709a0"
+  },
+  "STX17": {
+    "article": "Rosengren Pielberg G et al. (2008) A cis-acting regulatory mutation causes premature hair graying and susceptibility to melanoma in the horse. Nature Genetics 40:1004-1009",
+    "doi": "10.1038/ng.185"
+  },
+  "MC1R": {
+    "article": "Mundy NI et al. (2004) Conserved genetic basis of a quantitative plumage trait involved in mate choice. Science 303:1870-1873",
+    "doi": "10.1126/science.1093834"
+  },
+  "ASIP": {
+    "article": "Hoekstra HE et al. (2006) A single amino acid mutation contributes to adaptive beach mouse color pattern. Science 313:101-104",
+    "doi": "10.1126/science.1126121"
+  },
+  "KIT": {
+    "article": "Giebel LB & Spritz RA (1991) Mutation of the KIT (mast/stem cell growth factor receptor) protooncogene in human piebaldism. PNAS 88:8696-8699",
+    "doi": "10.1073/pnas.88.19.8696"
+  },
+  "OCA2": {
+    "article": "Sturm RA et al. (2008) A single SNP in an evolutionary conserved region within intron 86 of the HERC2 gene determines human blue-brown eye color. Am J Hum Genet 82:424-431",
+    "doi": "10.1016/j.ajhg.2007.11.005"
+  },
+  "COL4A5": {
+    "article": "Zheng K et al. (1994) Canine X chromosome-linked hereditary nephritis: a genetic model for human X-linked hereditary nephritis resulting from a single base mutation in the gene encoding the alpha 5 chain of collagen type IV. Proc Natl Acad Sci USA 91:3989-3993",
+    "doi": "10.1073/pnas.91.9.3989"
+  },
+  "PKD1": {
+    "article": "Lyons LA et al. (2004) Feline polycystic kidney disease mutation identified in PKD1. Journal of the American Society of Nephrology 15:2548-2555",
+    "doi": "10.1097/01.ASN.0000141776.38527.BB"
+  },
+  "PKD2": {
+    "article": "Mochizuki T et al. (1996) PKD2, a gene for polycystic kidney disease that encodes an integral membrane protein. Science 272:1339-1342",
+    "doi": "10.1126/science.272.5266.1339"
+  },
+  "SLC34A1": {
+    "article": "Murer H et al. (2000) Proximal tubular phosphate reabsorption: molecular mechanisms. Physiological Reviews 80:1373-1409",
+    "doi": "10.1152/physrev.2000.80.4.1373"
+  },
+  "AR": {
+    "article": "Quigley CA et al. (1995) Androgen receptor defects: historical, clinical, and molecular perspectives. Endocr Rev 16:271-321",
+    "doi": "10.1210/edrv-16-3-271"
+  },
+  "CHD1-W/Z": {
+    "article": "Griffiths R et al. (1998) A DNA test to sex most birds. Mol Ecol 7:1071-1075",
+    "doi": "10.1046/j.1365-294x.1998.00389.x"
+  },
+  "CYP19A1 (Aromatase)": {
+    "article": "Simpson ER et al. (1994) Aromatase cytochrome P450, the enzyme responsible for estrogen biosynthesis. Endocr Rev 15:342-355",
+    "doi": "10.1210/edrv-15-3-342"
+  },
+  "ESR1": {
+    "article": "Rothschild MF et al. (1996) The estrogen receptor locus is associated with a major gene influencing litter size in pigs. Proc Natl Acad Sci USA 93:201-205",
+    "doi": "10.1073/pnas.93.1.201"
+  },
+  "ESR1 (ER\u03b1)": {
+    "article": "Lubahn DB et al. (1993) Alteration of reproductive function but not prenatal sexual development after insertional disruption of the mouse estrogen receptor gene. Proc Natl Acad Sci USA 90:11162-11166",
+    "doi": "10.1073/pnas.90.23.11162"
+  },
+  "ESR2 (ER\u03b2)": {
+    "article": "Krege JH et al. (1998) Generation and reproductive phenotypes of mice lacking estrogen receptor beta. Proc Natl Acad Sci USA 95:15677-15682",
+    "doi": "10.1073/pnas.95.26.15677"
+  },
+  "PRL": {
+    "article": "Jiang RS et al. (2005) Association of prolactin and prolactin receptor gene polymorphisms with broodiness trait in chickens. Poultry Science 84:839-845",
+    "doi": "10.1093/ps/84.6.839"
+  },
+  "VTG": {
+    "article": "Wahli W et al. (1981) Vitellogenin gene family of Xenopus laevis: evolution, organization and expression. Cold Spring Harbor Symposia on Quantitative Biology 45:831-839",
+    "doi": "10.1038/291429a0"
+  },
+  "SRY": {
+    "article": "Sinclair AH et al. (1990) A gene from the human sex-determining region encodes a protein with homology to a conserved DNA-binding motif. Nature 346:240-244",
+    "doi": "10.1038/346240a0"
+  },
+  "DMRT1": {
+    "article": "Smith CA et al. (2009) The avian Z-linked gene DMRT1 is required for male sex determination in the chicken. Nature 461:267-271",
+    "doi": "10.1038/nature08298"
+  },
+  "VASA": {
+    "article": "Hay B et al. (1988) A protein component of Drosophila polar granules is encoded by vasa and has extensive sequence similarity to ATP-dependent helicases. Cell 55:577-587",
+    "doi": "10.1016/0092-8674(88)90216-4"
+  },
+  "STRA8": {
+    "article": "Baltus AE et al. (2006) In germ cells of mouse embryonic ovaries, the decision to enter meiosis precedes premeiotic DNA replication. Nature Genetics 38:1430-1434",
+    "doi": "10.1038/ng1919"
+  },
+  "ADAMTS10": {
+    "article": "Kuchtey J et al. (2011) Mapping of the disease locus and identification of ADAMTS10 as a candidate gene in a canine model of primary open angle glaucoma. PLoS Genet 7:e1001306",
+    "doi": "10.1371/journal.pgen.1001306"
+  },
+  "AIPL1": {
+    "article": "Sohocki MM et al. (2000) Mutations in a new photoreceptor-pineal gene on 17p causing Leber congenital amaurosis. Nat Genet 24:79-83",
+    "doi": "10.1038/71732"
+  },
+  "CEP290": {
+    "article": "Menotti-Raymond M et al. (2007) Mutation in CEP290 discovered for cat model of human retinal degeneration. J Hered 98:211-220",
+    "doi": "10.1093/jhered/esm019"
+  },
+  "CNGB3": {
+    "article": "Komaromy AM et al. (2010) Gene therapy rescues cone function in congenital achromatopsia. Hum Mol Genet 19:2581-2593",
+    "doi": "10.1093/hmg/ddq136"
+  },
+  "CRX": {
+    "article": "Furukawa T et al. (1997) Crx, a novel otx-like homeobox gene, shows photoreceptor-specific expression and regulates photoreceptor differentiation. Cell 91:531-541",
+    "doi": "10.1016/S0092-8674(00)80439-0"
+  },
+  "CRY4": {
+    "article": "Gunther A et al. (2018) Double-cone localization and seasonal expression pattern suggest a role in magnetoreception for European robin cryptochrome 4. Curr Biol 28:211-223",
+    "doi": "10.1016/j.cub.2017.12.003"
+  },
+  "CSNB": {
+    "article": "Bellone RR et al. (2008) Differential gene expression of TRPM1, the potential cause of congenital stationary night blindness in horses. PLoS ONE 3:e3007",
+    "doi": "10.1371/journal.pone.0003007"
+  },
+  "FAM174A": {
+    "article": "Goldstein O et al. (2010) Genome-wide association study identifies a mutation in FAM174A associated with hearing loss in Rhodesian Ridgeback dogs. Gene 466:56-60",
+    "doi": ""
+  },
+  "GNAT3": {
+    "article": "McLaughlin SK et al. (1992) Gustducin is a taste-cell-specific G protein closely related to the transducins. Nature 357:563-569",
+    "doi": "10.1038/357563a0"
+  },
+  "OR5A1": {
+    "article": "Jaeger SR et al. (2013) A mendelian trait for olfactory sensitivity affects odor experience and food selection. Current Biology 23:1601-1605",
+    "doi": "10.1016/j.cub.2013.07.030"
+  },
+  "PRCD": {
+    "article": "Zangerl B et al. (2006) Identical mutation in a novel retinal gene causes progressive rod-cone degeneration in dogs and retinitis pigmentosa in humans. Genomics 88:551-563",
+    "doi": "10.1016/j.ygeno.2006.07.007"
+  },
+  "RPE65": {
+    "article": "Acland GM et al. (2001) Gene therapy restores vision in a canine model of childhood blindness. Nature Genetics 28:92-95",
+    "doi": "10.1038/ng0501-92"
+  },
+  "SWS1 (UV Opsin)": {
+    "article": "Yokoyama S et al. (2000) Molecular basis of spectral tuning in the red- and green-sensitive (M/LWS) pigments in vertebrates. Genetics 155:919-931",
+    "doi": "10.1016/s1350-9462(00)00002-1"
+  },
+  "TRPM1": {
+    "article": "Bellone RR et al. (2013) Evidence for a retroviral insertion in TRPM1 as the cause of congenital stationary night blindness and leopard complex spotting in the horse. PLoS ONE 8:e78280",
+    "doi": "10.1371/journal.pone.0078280"
+  },
+  "OPSIN1LW": {
+    "article": "Nathans J et al. (1986) Molecular genetics of human color vision: the genes encoding blue, green, and red pigments. Science 232:193-202",
+    "doi": "10.1126/science.2937147"
+  },
+  "CRY1": {
+    "article": "Mouritsen H et al. (2004) Cryptochromes and neuronal-activity markers colocalize in the retina of migratory birds during magnetic orientation. PNAS 101:14294-14299",
+    "doi": "10.1073/pnas.0405968101"
+  },
+  "TRPV1": {
+    "article": "Caterina MJ et al. (1997) The capsaicin receptor: a heat-activated ion channel in the pain pathway. Nature 389:816-824",
+    "doi": "10.1038/39807"
+  },
+  "PRESTIN": {
+    "article": "Li Y et al. (2010) The hearing gene Prestin unites echolocating bats and whales. Current Biology 20:R55-R56",
+    "doi": "10.1016/j.cub.2009.11.042"
+  },
+  "GR/TAS2R": {
+    "article": "Li X et al. (2005) Pseudogenization of a sweet-receptor gene accounts for cats' indifference toward sugar. PLoS Genetics 1:e3",
+    "doi": "10.1371/journal.pgen.0010003"
+  },
+  "AVPR1B": {
+    "article": "Wersinger SR et al. (2002) Vasopressin V1b receptor knockout reduces aggressive behavior in male mice. Mol Psychiatry 7:975-984",
+    "doi": "10.1038/sj.mp.4001195"
+  },
+  "CRH": {
+    "article": "Vale W et al. (1981) Characterization of a 41-residue ovine hypothalamic peptide that stimulates secretion of corticotropin and beta-endorphin. Science 213:1394-1397",
+    "doi": "10.1126/science.6267699"
+  },
+  "CRHR1": {
+    "article": "Muller MB et al. (2003) Limbic corticotropin-releasing hormone receptor 1 mediates anxiety-related behavior and hormonal adaptation to stress. Nat Neurosci 6:1100-1107",
+    "doi": "10.1038/nn1123"
+  },
+  "CRHR2": {
+    "article": "Bale TL et al. (2000) Mice deficient for corticotropin-releasing hormone receptor-2 display anxiety-like behaviour and are hypersensitive to stress. Nat Genet 24:410-414",
+    "doi": "10.1038/74263"
+  },
+  "DUSP1": {
+    "article": "Abraham SM et al. (2006) Antiinflammatory effects of dexamethasone are partly dependent on induction of dual specificity phosphatase 1. J Exp Med 203:1883-1889",
+    "doi": "10.1084/jem.20060336"
+  },
+  "FKBP5": {
+    "article": "Binder EB et al. (2004) Polymorphisms in FKBP5 are associated with increased recurrence of depressive episodes and rapid response to antidepressant treatment. Nat Genet 36:1319-1325",
+    "doi": "10.1038/ng1479"
+  },
+  "GPX": {
+    "article": "Rotruck JT et al. (1973) Selenium: biochemical role as a component of glutathione peroxidase. Science 179:588-590",
+    "doi": "10.1126/science.179.4073.588"
+  },
+  "GPX1": {
+    "article": "Lei XG et al. (2007) Metabolic regulation and function of glutathione peroxidase-1. Annu Rev Nutr 27:41-61",
+    "doi": "10.1146/annurev.nutr.27.061406.093716"
+  },
+  "HSP70": {
+    "article": "Mazzi CM et al. (2003) Polymorphism analysis of the hsp70 stress gene in broiler chickens of improved and semi-heavy lineages. Genet Mol Biol 26:7-10",
+    "doi": "10.1590/S1415-47572003000100002"
+  },
+  "HSP90": {
+    "article": "Rutherford SL & Lindquist S (1998) Hsp90 as a capacitor for morphological evolution. Nature 396:336-342",
+    "doi": "10.1038/24550"
+  },
+  "HSPB1": {
+    "article": "Kinnunen S et al. (2005) Exercise-induced oxidative stress and muscle stress protein responses in trotters. Eur J Appl Physiol 93:496-501",
+    "doi": "10.1007/s00421-004-1162-x"
+  },
+  "NR3C1 (GR)": {
+    "article": "Weaver IC et al. (2004) Epigenetic programming by maternal behavior. Nature Neuroscience 7:847-854",
+    "doi": "10.1038/nn1276"
+  },
+  "SOD": {
+    "article": "McCord JM & Fridovich I (1969) Superoxide dismutase: an enzymic function for erythrocuprein (hemocuprein). Journal of Biological Chemistry 244:6049-6055",
+    "doi": ""
+  },
+  "SOD1": {
+    "article": "Awano T et al. (2009) Genome-wide association analysis reveals a SOD1 mutation in canine degenerative myelopathy that resembles amyotrophic lateral sclerosis. Proceedings of the National Academy of Sciences 106:2794-2799",
+    "doi": "10.1073/pnas.0812297106"
+  },
+  "SOD2": {
+    "article": "Li Y et al. (1995) Dilated cardiomyopathy and neonatal lethality in mutant mice lacking manganese superoxide dismutase. Nature Genetics 11:376-381",
+    "doi": "10.1038/ng1295-376"
+  },
+  "TXNRD1": {
+    "article": "Gladyshev VN et al. (1996) Selenocysteine-containing thioredoxin reductase in C. elegans. Biochemical and Biophysical Research Communications 228:40-45",
+    "doi": "10.1073/pnas.93.12.6146"
+  },
+  "COL11A2": {
+    "article": "Vikkula M et al. (1995) Autosomal dominant and recessive osteochondrodysplasias associated with the COL11A2 locus. Cell 80:431-437",
+    "doi": "10.1016/0092-8674(95)90493-X"
+  },
+  "COL5A1": {
+    "article": "Wenstrup RJ et al. (2000) COL5A1 haploinsufficiency is a common molecular mechanism underlying the classical form of EDS. Am J Hum Genet 66:1766-1776",
+    "doi": "10.1086/302930"
+  },
+  "DMRT3": {
+    "article": "Andersson LS et al. (2012) Mutations in DMRT3 affect locomotion in horses and spinal circuit function in mice. Nature 488:642-646",
+    "doi": "10.1038/nature11399"
+  },
+  "FGF4": {
+    "article": "Parker HG et al. (2009) An expressed fgf4 retrogene is associated with breed-defining chondrodysplasia in domestic dogs. Science 325:995-998",
+    "doi": "10.1126/science.1173275"
+  },
+  "HMGA2": {
+    "article": "Jones P et al. (2008) Single-nucleotide-polymorphism-based association mapping of dog stereotypes. Genetics 179:1033-1044",
+    "doi": "10.1534/genetics.108.087866"
+  },
+  "LCORL": {
+    "article": "Makvandi-Nejad S et al. (2012) Four loci explain 83% of size variation in the horse. PLoS One 7:e39929",
+    "doi": "10.1371/journal.pone.0039929"
+  },
+  "LMNA": {
+    "article": "Fatkin D et al. (1999) Missense mutations in the rod domain of the lamin A/C gene as causes of dilated cardiomyopathy and conduction-system disease. N Engl J Med 341:1715-1724",
+    "doi": "10.1056/NEJM199912023412302"
+  },
+  "MSRB3": {
+    "article": "Boyko AR et al. (2010) A simple genetic architecture underlies morphological variation in dogs. PLoS Biol 8:e1000451",
+    "doi": "10.1371/journal.pbio.1000451"
+  },
+  "NCAPG": {
+    "article": "Tetens J et al. (2013) The LCORL/NCAPG locus associated with body size in equines. Anim Genet 44:212-215",
+    "doi": "10.1111/j.1365-2052.2012.02390.x"
+  },
+  "PLOD1": {
+    "article": "Pinnell SR et al. (1972) A heritable disorder of connective tissue: hydroxylysine-deficient collagen disease. New England Journal of Medicine 286:1013-1020",
+    "doi": "10.1056/NEJM197205112861901"
+  },
+  "PPIB": {
+    "article": "van Dijk FS et al. (2009) PPIB mutations cause severe osteogenesis imperfecta. American Journal of Human Genetics 85:521-527",
+    "doi": "10.1016/j.ajhg.2009.09.001"
+  },
+  "COL1A1": {
+    "article": "Byers PH et al. (1991) Osteogenesis imperfecta: translation of mutation to phenotype. J Med Genet 28:433-442",
+    "doi": "10.1136/jmg.28.7.433"
+  },
+  "PITX1": {
+    "article": "Chan YF et al. (2010) Adaptive evolution of pelvic reduction in sticklebacks by recurrent deletion of a Pitx1 enhancer. Science 327:302-305",
+    "doi": "10.1126/science.1182213"
+  },
+  "RUNX2": {
+    "article": "Sears KE et al. (2007) The relationship between gene sequence variation and skull shape in dogs: an example of morphological evolution by selection on tandem repeat sequences. Evol Dev 9:81-92 (Fondon & Garner 2004 PNAS 101:18058-18063 is key reference)",
+    "doi": "10.1073/pnas.0408118101"
+  }
+}

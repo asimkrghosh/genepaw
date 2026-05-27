@@ -1,5 +1,31 @@
 # Deferred Work Log
 
+## Deferred from: code review of 5-1-backend-vet-registration-api (2026-05-21)
+
+- Email case-sensitivity allows registration bypass (`VET@clinic.com` passes the SELECT check that uses `=` comparison) — same gap exists in `auth.py`; fix both together by normalizing emails to lowercase on write [`app/api/v1/vets.py:21`].
+- No password minimum length validation — `password: str` with no `min_length`; also absent in `auth.py` `RegisterRequest`; add consistently across all registration schemas [`app/schemas/vet.py:12`].
+- Empty/whitespace strings accepted for all required string fields (`name`, `clinic_name`, `city`, `state`, `phone`) — no spec requirement for field-level validation; add `@field_validator` with `.strip()` check in a hardening pass [`app/schemas/vet.py`].
+- `registration_number` has no uniqueness constraint in DB — spec treats it as free-text; revisit if VCI validation is added later [`app/models/vet_profile.py`].
+- No rate limiting on `POST /vets/register` — cross-cutting infrastructure concern; address globally when rate limiting is added to the API gateway layer [`app/api/v1/vets.py`].
+- Flush mock fragility: `obj.id is None` guard in `_db_register_new_vet` will silently fail to assign UUID if `User` ever gets a Python-side `uuid4()` default; revisit if User model default changes [`app/api/v1/vets_test.py`].
+
+## Deferred from: code review of 4-4-frontend-consumer-pdf-report-download (2026-05-21)
+
+- No null guard on `resultData` parameter in `generateConsumerPDF` — caller site (`Results.jsx:293`) structurally prevents null; add defensive guard when function is reused from other call sites [`src/reportPdf.js:515`].
+- `orderId` used raw in PDF filename — URL router constrains orderId to URL-safe chars in practice; sanitize with `.replace(/[^a-zA-Z0-9_-]/g, "_")` before any new call site that accepts user-provided IDs [`src/reportPdf.js:521`].
+- Empty `trait_scores` object renders section header with no rows — cosmetic; data contract prevents this in real API responses; add empty-state message when `traits.length === 0` in a future UX polish pass [`src/reportPdf.js:630`].
+
+## Deferred from: code review of App.jsx (2026-05-21)
+
+- No JWT signature verification in `AuthGuard` — client-side-only check; a forged token with `role: "staff"` passes the guard. Requires backend session validation or token introspection endpoint [`src/App.jsx:AuthGuard`].
+- JWT stored in `localStorage` is XSS-vulnerable — any injected script can steal the token; requires HttpOnly cookie migration (architectural change) [`src/App.jsx:13`].
+- Bare `catch {}` with no logging in `AuthGuard` — all error types (parse errors, injected values) silently redirect with no dev observability [`src/App.jsx:53`].
+- `/vet-program` and `/vet-report` routes unguarded — design decision needed: do vet routes require authentication? [`src/App.jsx:74-75`].
+- Role string comparison fragility + Navbar divergence — `"staff"` compared as a bare string in `AuthGuard`, `AppContext`, and `Navbar isAdmin`; a role constants module shared across all three would prevent silent drift when roles are added [`src/App.jsx:50`, `src/AppContext.jsx:92`, `src/shared.jsx`].
+- Single top-level `Suspense` boundary — a slow chunk loading blocks user interaction on the entire app; each route should have its own `Suspense` boundary for independent loading [`src/App.jsx:33`].
+- `/vet-report` aliases `/vet-program` with no differentiation — both render `<VetPortal />`; if `VetPortal` doesn't branch on `useLocation().pathname`, the two routes show identical content; verify intent [`src/App.jsx:74-75`].
+- `/results` routes serve genetic PHI/PII with no customer-level frontend auth — no customer session mechanism exists; backend API is the authorization layer. Defer until a customer login/session flow is designed [`src/App.jsx:71-72`].
+
 ## Deferred from: code review of 4-3-frontend-results-reveal-page (2026-05-21)
 
 - Empty `breed_composition` or `trait_scores` arrays render blank sections with no empty-state message — triggered only by lab data quality issues where webhook passes top-level key presence check but sends an empty array; AC scope does not require empty-state UI [`src/Results.jsx`].
