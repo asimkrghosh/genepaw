@@ -375,3 +375,11 @@ claude-sonnet-4-6
 ### Change Log
 
 - 2026-05-21: Implemented vet partner landing page (Story 5.2) — Hero, Referral Model, Report Depth sections + registration form wired to POST /api/v1/vets/register via useMutation v5
+
+## Review Findings
+
+- [ ] [Review][Decision] No client-side password minimum-length enforcement — spec is silent; placeholder says "Min. 8 characters" but `handleSubmit` has no `.length` check before calling `registerVet.mutate(form)` [`src/VetPortal.jsx`]
+- [ ] [Review][Patch] `registerVet.error` not cleared on re-submit — call `registerVet.reset()` before `registerVet.mutate(form)` in `handleSubmit` so a stale error from a previous attempt disappears when user retries [`src/VetPortal.jsx`]
+- [ ] [Review][Patch] `scrollIntoView` called without null guard on Hero CTA — `document.getElementById("vet-register")?.scrollIntoView(...)` should use optional chaining; if the element is somehow absent the call throws [`src/VetPortal.jsx`]
+- [x] [Review][Defer] Formatted phone autofill (e.g. `+91 98765 43210`) fails `/^[6-9]\d{9}$/` regex with the generic phone error message — deferred, pre-existing constraint from the phone regex spec
+- [x] [Review][Defer] Success card contains `<h3>You're in!</h3>` heading not mentioned in spec success message — deferred, cosmetic, does not conflict with AC2

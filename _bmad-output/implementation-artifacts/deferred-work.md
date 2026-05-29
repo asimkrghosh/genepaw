@@ -1,5 +1,10 @@
 # Deferred Work Log
 
+## Deferred from: code review of 5-2-frontend-vet-partner-landing-page (2026-05-27)
+
+- Formatted phone autofill (e.g. `+91 98765 43210`) fails `/^[6-9]\d{9}$/` regex with generic error message — spec defines the regex as-is; improve error hint to say "Enter digits only, no spaces or country code" in a future UX hardening pass [`src/VetPortal.jsx`].
+- Success card contains `<h3>You're in!</h3>` heading not in the spec success message — cosmetic; does not contradict AC2 wording; trim in a future copy-review pass [`src/VetPortal.jsx`].
+
 ## Deferred from: code review of 5-1-backend-vet-registration-api (2026-05-21)
 
 - Email case-sensitivity allows registration bypass (`VET@clinic.com` passes the SELECT check that uses `=` comparison) — same gap exists in `auth.py`; fix both together by normalizing emails to lowercase on write [`app/api/v1/vets.py:21`].
