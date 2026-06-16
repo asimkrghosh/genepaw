@@ -4,7 +4,7 @@ import { Search, ChevronDown, Plus, Check, ArrowRight, ArrowLeft, Clock, Truck, 
 import { COLORS, SectionTitle, Badge, Navbar, Footer, DEFAULT_PRICING } from "./shared.jsx";
 import { SPECIES_DATA, STEP_TEMPLATES } from "./CustomerPortal.jsx";
 import { useApp } from "./AppContext.jsx";
-import { RISK_LEVELS, SIGNIFICANCE_OPTIONS } from "./markerData.js";
+import { RISK_LEVELS } from "./markerData.js";
 import SpeciesSelect from "./SpeciesSelect.jsx";
 export { makeMarker, MARKER_CATEGORIES } from "./markerData.js";
 
@@ -721,7 +721,7 @@ function MarkersAdmin() {
   const [saved, setSaved] = useState(false);
   const [loading, setLoading] = useState(true);
   const [editingMarker, setEditingMarker] = useState(null);
-  const [editMarkerValue, setEditMarkerValue] = useState({ name: "", gene: "", risk: "Low", species: "", significance: SIGNIFICANCE_OPTIONS[0], description: "", article: "", doi: "" });
+  const [editMarkerValue, setEditMarkerValue] = useState({ name: "", gene: "", risk: "Low", species: "", significance: "", description: "", article: "", doi: "" });
   const [newMarker, setNewMarker] = useState({ catId: null, name: "", gene: "", risk: "", species: "", significance: "", description: "", article: "", doi: "" });
   const [viewingMarker, setViewingMarker] = useState(null);
   const [expandedCats, setExpandedCats] = useState([]);
@@ -747,7 +747,7 @@ function MarkersAdmin() {
       updateArticle(editMarkerValue.gene.trim(), { article: editMarkerValue.article.trim(), doi: editMarkerValue.doi.trim() });
     }
     setEditingMarker(null);
-    setEditMarkerValue({ name: "", gene: "", risk: "Low", species: "", significance: SIGNIFICANCE_OPTIONS[0], description: "", article: "", doi: "" });
+    setEditMarkerValue({ name: "", gene: "", risk: "Low", species: "", significance: "", description: "", article: "", doi: "" });
     flash();
   };
   const deleteMarker = (catId, idx) => { ctxDeleteMarker(catId, idx); flash(); };
@@ -816,10 +816,7 @@ function MarkersAdmin() {
                               </select>
                               <SpeciesSelect value={editMarkerValue.species} onChange={(v) => setEditMarkerValue({ ...editMarkerValue, species: v })} />
                             </div>
-                            <select value={editMarkerValue.significance} onChange={(e) => setEditMarkerValue({ ...editMarkerValue, significance: e.target.value })} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none">
-                              <option value="" disabled>— Clinical Significance —</option>
-                              {SIGNIFICANCE_OPTIONS.map((sig) => <option key={sig} value={sig}>{sig}</option>)}
-                            </select>
+                            <textarea value={editMarkerValue.significance} onChange={(e) => setEditMarkerValue({ ...editMarkerValue, significance: e.target.value })} placeholder="Clinical significance specific to this marker…" rows={3} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none resize-none focus:ring-2 focus:ring-green-100" />
                             <textarea value={editMarkerValue.description} onChange={(e) => setEditMarkerValue({ ...editMarkerValue, description: e.target.value })} placeholder="Description" rows={2} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none resize-none focus:ring-2 focus:ring-green-100" />
                             <div className="pt-2 border-t border-gray-100 space-y-2">
                               <p className="text-[10px] uppercase font-semibold text-gray-400 flex items-center gap-1"><BookOpen size={10} /> Published Article <span className="font-normal normal-case text-gray-300">(optional)</span></p>
@@ -923,10 +920,7 @@ function MarkersAdmin() {
                         </select>
                         <SpeciesSelect value={newMarker.species} onChange={(v) => setNewMarker({ ...newMarker, species: v })} />
                       </div>
-                      <select value={newMarker.significance} onChange={(e) => setNewMarker({ ...newMarker, significance: e.target.value })} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none">
-                        <option value="" disabled>— Clinical Significance —</option>
-                        {SIGNIFICANCE_OPTIONS.map((sig) => <option key={sig} value={sig}>{sig}</option>)}
-                      </select>
+                      <textarea value={newMarker.significance} onChange={(e) => setNewMarker({ ...newMarker, significance: e.target.value })} placeholder="Clinical significance specific to this marker…" rows={3} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none resize-none focus:border-green-400 focus:ring-2 focus:ring-green-100" />
                       <textarea value={newMarker.description} onChange={(e) => setNewMarker({ ...newMarker, description: e.target.value })} placeholder="Description" rows={2} className="w-full px-3 py-1.5 rounded-lg border border-gray-200 text-sm focus:outline-none resize-none focus:border-green-400 focus:ring-2 focus:ring-green-100" />
                       <div className="pt-2 border-t border-gray-100 space-y-2">
                         <p className="text-[10px] uppercase font-semibold text-gray-400 flex items-center gap-1"><BookOpen size={10} /> Published Article <span className="font-normal normal-case text-gray-300">(optional)</span></p>

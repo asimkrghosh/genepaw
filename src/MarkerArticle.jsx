@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import { ArrowLeft, ArrowRight, Dna, AlertTriangle, BookOpen, Globe2, Activity, Tag, ExternalLink, Pencil, Check, X } from "lucide-react";
 import { COLORS, Navbar, Footer } from "./shared.jsx";
-import { RISK_LEVELS, SIGNIFICANCE_OPTIONS } from "./markerData.js";
+import { RISK_LEVELS } from "./markerData.js";
 import SpeciesSelect from "./SpeciesSelect.jsx";
 import { useApp } from "./AppContext.jsx";
 
@@ -173,10 +173,7 @@ export default function MarkerArticle() {
               </div>
               <div>
                 <label className={labelClass}>Clinical Significance</label>
-                <select value={markerDraft.significance} onChange={(e) => setMarkerDraft({ ...markerDraft, significance: e.target.value })} className={inputClass}>
-                  <option value="">— Select —</option>
-                  {SIGNIFICANCE_OPTIONS.map((s) => <option key={s} value={s}>{s}</option>)}
-                </select>
+                <textarea value={markerDraft.significance} onChange={(e) => setMarkerDraft({ ...markerDraft, significance: e.target.value })} rows={3} className={inputClass + " resize-none"} placeholder="Clinical significance specific to this marker…" />
               </div>
               <div>
                 <label className={labelClass}>Description</label>
